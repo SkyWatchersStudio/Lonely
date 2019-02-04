@@ -539,7 +539,7 @@ Camera:
   m_GameObject: {fileID: 1826905905}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 3
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
@@ -552,12 +552,12 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.1
-  far clip plane: 5000
+  near clip plane: 9
+  far clip plane: 200
   field of view: 40
   orthographic: 1
   orthographic size: 7
-  m_Depth: -1
+  m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -599,13 +599,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Shader: {fileID: 4800000, guid: 9d7e8f87435780644abb4acdfd72a2f0, type: 3}
-  LookupTexture: {fileID: 2800000, guid: 4684d6ce68c18bc48933c73dbd080690, type: 3}
-  Amount: 1
+  LookupTexture: {fileID: 2800000, guid: 78b06834af8bc544da3da025038d9d1c, type: 3}
+  Amount: 0.2
   TintColor: {r: 1, g: 1, b: 1, a: 1}
-  Hue: 222
-  Saturation: 0.16
-  Brightness: 0.3
-  Contrast: 0.44
+  Hue: 18
+  Saturation: 0.47
+  Brightness: 0.23
+  Contrast: 0.23
   Sharpness: 0
 --- !u!1 &1862952951
 GameObject:
