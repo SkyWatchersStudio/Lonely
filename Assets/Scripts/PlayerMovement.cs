@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public CharacterController2D controller;
+    public CharacterController2D controller;   
 
-    public float runSpeed = 40.0f;
+    public float runSpeed = 40.0f;                       //speed that multiplies to the move input
     private float horizontalMove = 0.0f;
     private bool jump = false;
 
