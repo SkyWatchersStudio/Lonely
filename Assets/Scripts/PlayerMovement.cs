@@ -20,6 +20,10 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private void Start() 
+    {
+    }
+    
     void FixedUpdate()
     {
         controller.Move(horizontalMove * Time.fixedDeltaTime,false,jump);
