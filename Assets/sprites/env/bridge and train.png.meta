@@ -3,7 +3,7 @@ guid: abc36ea668bf5bd449f7d05b9da11d68
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
