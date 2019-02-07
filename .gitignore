@@ -6,6 +6,9 @@
 [Bb]uilds/
 [Ll]ogs/
 
+# Never ignore Asset meta data
+![Aa]ssets/**/*.meta
+
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # [Aa]ssets/AssetStoreTools*
 
@@ -49,5 +52,3 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
-# Unity Version
-ProjectSettings/ProjectVersion.txt
