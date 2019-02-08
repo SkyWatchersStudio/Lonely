@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 138152095}
   - component: {fileID: 138152097}
   - component: {fileID: 138152096}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 180005443}
   - component: {fileID: 180005445}
   - component: {fileID: 180005444}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (45)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +335,7 @@ GameObject:
   - component: {fileID: 207693260}
   - component: {fileID: 207693262}
   - component: {fileID: 207693261}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -441,7 +441,7 @@ GameObject:
   - component: {fileID: 243027910}
   - component: {fileID: 243027912}
   - component: {fileID: 243027911}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -547,7 +547,7 @@ GameObject:
   - component: {fileID: 328695761}
   - component: {fileID: 328695763}
   - component: {fileID: 328695762}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -653,7 +653,7 @@ GameObject:
   - component: {fileID: 344937332}
   - component: {fileID: 344937334}
   - component: {fileID: 344937333}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -759,7 +759,7 @@ GameObject:
   - component: {fileID: 352516963}
   - component: {fileID: 352516965}
   - component: {fileID: 352516964}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1001,7 +1001,7 @@ GameObject:
   - component: {fileID: 402918734}
   - component: {fileID: 402918736}
   - component: {fileID: 402918735}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (46)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1107,7 +1107,7 @@ GameObject:
   - component: {fileID: 416287521}
   - component: {fileID: 416287522}
   - component: {fileID: 416287523}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ellipse 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1327,7 +1327,7 @@ GameObject:
   - component: {fileID: 421268724}
   - component: {fileID: 421268726}
   - component: {fileID: 421268725}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1433,7 +1433,7 @@ GameObject:
   - component: {fileID: 424390797}
   - component: {fileID: 424390799}
   - component: {fileID: 424390798}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1749,7 +1749,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 538406462}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: zamin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1839,7 +1839,7 @@ GameObject:
   - component: {fileID: 590153379}
   - component: {fileID: 590153381}
   - component: {fileID: 590153380}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2051,7 +2051,7 @@ GameObject:
   - component: {fileID: 665528961}
   - component: {fileID: 665528963}
   - component: {fileID: 665528962}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2157,7 +2157,7 @@ GameObject:
   - component: {fileID: 673163412}
   - component: {fileID: 673163414}
   - component: {fileID: 673163413}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (53)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2263,7 +2263,7 @@ GameObject:
   - component: {fileID: 700320277}
   - component: {fileID: 700320279}
   - component: {fileID: 700320278}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2369,7 +2369,7 @@ GameObject:
   - component: {fileID: 724639692}
   - component: {fileID: 724639694}
   - component: {fileID: 724639693}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2475,7 +2475,7 @@ GameObject:
   - component: {fileID: 749263678}
   - component: {fileID: 749263680}
   - component: {fileID: 749263679}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2639,7 +2639,7 @@ GameObject:
   - component: {fileID: 801283553}
   - component: {fileID: 801283555}
   - component: {fileID: 801283554}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2828,7 +2828,7 @@ GameObject:
   - component: {fileID: 923641096}
   - component: {fileID: 923641098}
   - component: {fileID: 923641097}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2934,7 +2934,7 @@ GameObject:
   - component: {fileID: 963632633}
   - component: {fileID: 963632635}
   - component: {fileID: 963632634}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3040,7 +3040,7 @@ GameObject:
   - component: {fileID: 1012939254}
   - component: {fileID: 1012939256}
   - component: {fileID: 1012939255}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (54)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3146,7 +3146,7 @@ GameObject:
   - component: {fileID: 1053507848}
   - component: {fileID: 1053507850}
   - component: {fileID: 1053507849}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3252,7 +3252,7 @@ GameObject:
   - component: {fileID: 1080272278}
   - component: {fileID: 1080272280}
   - component: {fileID: 1080272279}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3358,7 +3358,7 @@ GameObject:
   - component: {fileID: 1085164551}
   - component: {fileID: 1085164553}
   - component: {fileID: 1085164552}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3464,7 +3464,7 @@ GameObject:
   - component: {fileID: 1108264390}
   - component: {fileID: 1108264392}
   - component: {fileID: 1108264391}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (49)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3570,7 +3570,7 @@ GameObject:
   - component: {fileID: 1150130249}
   - component: {fileID: 1150130251}
   - component: {fileID: 1150130250}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3676,7 +3676,7 @@ GameObject:
   - component: {fileID: 1160345125}
   - component: {fileID: 1160345124}
   - component: {fileID: 1160345126}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3782,7 +3782,7 @@ GameObject:
   - component: {fileID: 1207412927}
   - component: {fileID: 1207412929}
   - component: {fileID: 1207412928}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3888,7 +3888,7 @@ GameObject:
   - component: {fileID: 1214278664}
   - component: {fileID: 1214278666}
   - component: {fileID: 1214278665}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (51)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3994,7 +3994,7 @@ GameObject:
   - component: {fileID: 1223585686}
   - component: {fileID: 1223585688}
   - component: {fileID: 1223585687}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4100,7 +4100,7 @@ GameObject:
   - component: {fileID: 1224381531}
   - component: {fileID: 1224381533}
   - component: {fileID: 1224381532}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4206,7 +4206,7 @@ GameObject:
   - component: {fileID: 1244878403}
   - component: {fileID: 1244878405}
   - component: {fileID: 1244878404}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (56)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4331,7 +4331,7 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 1307144424}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ebb028c972c641c4496eaf1bc4febd0d, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -4441,7 +4441,7 @@ MonoBehaviour:
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 512
   m_GroundCheck: {fileID: 394033135}
   m_CeilingCheck: {fileID: 1667576580}
   m_CrouchDisableCollider: {fileID: 0}
@@ -4480,7 +4480,7 @@ GameObject:
   - component: {fileID: 1323458172}
   - component: {fileID: 1323458174}
   - component: {fileID: 1323458173}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4586,7 +4586,7 @@ GameObject:
   - component: {fileID: 1362862232}
   - component: {fileID: 1362862234}
   - component: {fileID: 1362862233}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4692,7 +4692,7 @@ GameObject:
   - component: {fileID: 1397371722}
   - component: {fileID: 1397371724}
   - component: {fileID: 1397371723}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4798,7 +4798,7 @@ GameObject:
   - component: {fileID: 1485002227}
   - component: {fileID: 1485002229}
   - component: {fileID: 1485002228}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5116,7 +5116,7 @@ GameObject:
   - component: {fileID: 1609871151}
   - component: {fileID: 1609871153}
   - component: {fileID: 1609871152}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5222,7 +5222,7 @@ GameObject:
   - component: {fileID: 1657304836}
   - component: {fileID: 1657304838}
   - component: {fileID: 1657304837}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5358,7 +5358,7 @@ GameObject:
   - component: {fileID: 1682051331}
   - component: {fileID: 1682051333}
   - component: {fileID: 1682051332}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5464,7 +5464,7 @@ GameObject:
   - component: {fileID: 1684446840}
   - component: {fileID: 1684446842}
   - component: {fileID: 1684446841}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (50)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5570,7 +5570,7 @@ GameObject:
   - component: {fileID: 1685428748}
   - component: {fileID: 1685428750}
   - component: {fileID: 1685428749}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5676,7 +5676,7 @@ GameObject:
   - component: {fileID: 1694657461}
   - component: {fileID: 1694657463}
   - component: {fileID: 1694657462}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (47)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5782,7 +5782,7 @@ GameObject:
   - component: {fileID: 1789571839}
   - component: {fileID: 1789571841}
   - component: {fileID: 1789571840}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5888,7 +5888,7 @@ GameObject:
   - component: {fileID: 1800735596}
   - component: {fileID: 1800735598}
   - component: {fileID: 1800735597}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5994,7 +5994,7 @@ GameObject:
   - component: {fileID: 1806866616}
   - component: {fileID: 1806866618}
   - component: {fileID: 1806866617}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6100,7 +6100,7 @@ GameObject:
   - component: {fileID: 1896416240}
   - component: {fileID: 1896416242}
   - component: {fileID: 1896416241}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (41)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6206,7 +6206,7 @@ GameObject:
   - component: {fileID: 1931556969}
   - component: {fileID: 1931556971}
   - component: {fileID: 1931556970}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (55)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6312,7 +6312,7 @@ GameObject:
   - component: {fileID: 1962083071}
   - component: {fileID: 1962083073}
   - component: {fileID: 1962083072}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (48)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6524,7 +6524,7 @@ GameObject:
   - component: {fileID: 2067833423}
   - component: {fileID: 2067833425}
   - component: {fileID: 2067833424}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6863,7 +6863,7 @@ GameObject:
   - component: {fileID: 2133809618}
   - component: {fileID: 2133809620}
   - component: {fileID: 2133809619}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
