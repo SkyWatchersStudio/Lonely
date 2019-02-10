@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class TriggerFalling : MonoBehaviour
 {
-    void Start()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        
-    }
-
-    void Update()
-    {
-        
+        if (other.name == "player")
+        {
+            Debug.Log("Player entered...");
+        }
     }
 }
