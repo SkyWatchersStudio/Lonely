@@ -5,26 +5,20 @@ public class TriggerFalling : MonoBehaviour
 {
     public BoxCollider2D[] m_boxColliders;
     public float m_wait = 2;
+    private int i = 0;
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D()
     {
-        ColliderDesiabler();
+        InvokeRepeating("ColliderDisabler", m_wait, m_wait);
     }
-    void ColliderDesiabler()
+    void ColliderDisabler()
     {
-        int i = 1;
-        foreach (BoxCollider2D box in m_boxColliders)
+        m_boxColliders[i++].enabled = false;
+        print($"{i} is disabled");
+
+        if (i == m_boxColliders.Length)
         {
-            StartCoroutine(WaitTime());
-            
-            box.isTrigger = true;
-            Debug.Log($"box {i} is trigger now.");
-            i++;
+            CancelInvoke("ColliderDisabler");
         }
-    }
-
-    IEnumerator WaitTime()
-    {
-        yield return new WaitForSeconds(m_wait);
     }
 }
