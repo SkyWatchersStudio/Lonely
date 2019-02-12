@@ -1184,7 +1184,7 @@ GameObject:
   m_Layer: 0
   m_Name: Ground Check
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1196,7 +1196,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394033134}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.09, y: -1.06, z: 7.7851562}
+  m_LocalPosition: {x: -0.09, y: -0.642, z: 7.7851562}
   m_LocalScale: {x: 1, y: 0.32558164, z: 1}
   m_Children: []
   m_Father: {fileID: 1307144427}
@@ -5055,7 +5055,6 @@ GameObject:
   - component: {fileID: 1307144426}
   - component: {fileID: 1307144425}
   - component: {fileID: 1307144428}
-  - component: {fileID: 1307144430}
   - component: {fileID: 1307144429}
   m_Layer: 8
   m_Name: 'player '
@@ -5140,7 +5139,6 @@ Transform:
   m_LocalScale: {x: 0.11453776, y: 0.35179427, z: 0.11453776}
   m_Children:
   - {fileID: 394033135}
-  - {fileID: 1667576580}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5159,7 +5157,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -5174,43 +5172,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1307144424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25c4a6154de2da84d80b325c8ac859cc, type: 3}
+  m_Script: {fileID: 11500000, guid: e6b9e244adeb3d14f98c60aa7e091f9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 400
-  m_CrouchSpeed: 0.4
-  m_MovementSmoothing: 0.05
-  m_AirControl: 1
-  m_WhatIsGround:
+  speed: 4
+  checkRadius: 0.3
+  jumpForce: 5
+  jumpTime: 0.35
+  groundCheck: {fileID: 394033135}
+  whatIsGround:
     serializedVersion: 2
     m_Bits: 512
-  m_GroundCheck: {fileID: 394033135}
-  m_CeilingCheck: {fileID: 1667576580}
-  m_CrouchDisableCollider: {fileID: 0}
-  OnLandEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  OnCrouchEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: CharacterController2D+BoolEvent, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!114 &1307144430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1307144424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d8d474a59934ba41b6d6c9e74dfb858, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 1307144429}
-  runSpeed: 40
 --- !u!1 &1323458171
 GameObject:
   m_ObjectHideFlags: 0
@@ -6059,36 +6031,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1667576579
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1667576580}
-  m_Layer: 0
-  m_Name: Ceiling Check
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1667576580
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1667576579}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.04, y: 0.68, z: 7.7460938}
-  m_LocalScale: {x: 1, y: 0.32558164, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1307144427}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1682051330
 GameObject:
   m_ObjectHideFlags: 0
@@ -7839,7 +7781,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 2.41
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -7863,7 +7805,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2069548484}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -34.3, y: 9.4, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

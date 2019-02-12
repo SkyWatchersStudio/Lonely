@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMove : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {   
     //*************************************/  Components on the player gameobject
     private Rigidbody2D rb;
@@ -66,7 +66,7 @@ public class PlayerMove : MonoBehaviour
         move(moveInput);
     }
 
-    private void move(float input)
+    private void move(float input)                       //The function that moves the player with rigidbody
     {
         rb.velocity = new Vector2(moveInput * speed,rb.velocity.y);
         
