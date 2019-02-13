@@ -6,12 +6,12 @@ public class PlayerController : MonoBehaviour
 {   
     //*************************************/  Components on the player gameobject
     private Rigidbody2D rb;
-    //*************************************/
+    /*************************************/
 
     //*************************************/ variables for moving player
     [SerializeField] private float speed;
     private float moveInput;
-    //************************************/
+    /************************************/
 
     //************************************/  variables for jump settings
     [SerializeField] private float checkRadius;
@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private float jumpTimeCounter;
     private bool isJumping;
-    //************************************/
+    /************************************/
 
     void Start()
     {
@@ -63,18 +63,18 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        move(moveInput);
+        move();
     }
 
-    private void move(float input)                       //The function that moves the player with rigidbody
+    private void move()                       //The function that moves the player with rigidbody
     {
         rb.velocity = new Vector2(moveInput * speed,rb.velocity.y);
         
-        if(input > 0)
+        if(moveInput > 0)
         {
             transform.eulerAngles = new Vector3(0,0,0);
         }
-        else if(input < 0)
+        else if(moveInput < 0)
         {
             transform.eulerAngles = new Vector3(0,180,0);
         }
