@@ -6,12 +6,12 @@ public class PlayerController : MonoBehaviour
 {   
     //*************************************/  Components on the player gameobject
     private Rigidbody2D rb;
-    /*************************************/
+    //*************************************/
 
     //*************************************/ variables for moving player
     [SerializeField] private float speed;
     private float moveInput;
-    /************************************/
+    //************************************/
 
     //************************************/  variables for jump settings
     [SerializeField] private float checkRadius;
@@ -22,7 +22,16 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private float jumpTimeCounter;
     private bool isJumping;
+    //************************************/
+
+    //************************************/ variables for shapeshift progress
+    public GameObject birdPrefab;
     /************************************/
+
+    void Awake()
+    {
+        this.gameObject.name = "player";
+    }
 
     void Start()
     {
@@ -58,6 +67,11 @@ public class PlayerController : MonoBehaviour
         {
             isJumping = false;
         }
+
+        if(Input.GetButtonDown("ShapeShift"))
+        {
+            shapeShift();
+        }
     }
 
 
@@ -66,7 +80,7 @@ public class PlayerController : MonoBehaviour
         move();
     }
 
-    private void move()                       //The function that moves the player with rigidbody
+    private void move()                              
     {
         rb.velocity = new Vector2(moveInput * speed,rb.velocity.y);
         
@@ -78,5 +92,11 @@ public class PlayerController : MonoBehaviour
         {
             transform.eulerAngles = new Vector3(0,180,0);
         }
+    }
+
+    private void shapeShift()
+    {
+        Instantiate(birdPrefab,transform.position,transform.rotation);
+        Destroy(this.gameObject);
     }
 }
