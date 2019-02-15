@@ -5175,14 +5175,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6b9e244adeb3d14f98c60aa7e091f9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  checkRadius: 0
-  jumpForce: 0
-  jumpTime: 0
+  speed: 4.81
+  checkRadius: 1
+  jumpForce: 6.18
+  jumpTime: 0.36
   groundCheck: {fileID: 394033135}
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 567
+    m_Bits: 512
 --- !u!1 &1323458171
 GameObject:
   m_ObjectHideFlags: 0
@@ -7936,7 +7936,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 2.41
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -7960,7 +7960,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2069548484}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.08, y: 15.2, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
