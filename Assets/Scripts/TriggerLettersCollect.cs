@@ -7,4 +7,7 @@ public class TriggerLettersCollect : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
 
     }
+    private void OnGUI() {
+        
+    }
 }
