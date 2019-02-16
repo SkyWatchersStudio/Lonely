@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class TriggerLettersCollect : MonoBehaviour
 {
-    public float xRect = 25;
-    public float yRect = 25;
-    public float widthRect = 100;
-    public float heightRect = 30;
-    public string textField = "Hello, World!";
+    public float xRect = 400;
+    public float yRect = 100;
+    public float widthRect = 50;
+    public float heightRect = 50;
     
     private bool checkEnterance = false;
 
@@ -23,8 +22,6 @@ public class TriggerLettersCollect : MonoBehaviour
         
         if (checkEnterance) {
             guiPos  = new Rect(xRect, yRect, widthRect, heightRect);
-
-            textField = GUI.TextField (guiPos, textField);
         }
     }
 }
