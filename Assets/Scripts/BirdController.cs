@@ -22,12 +22,6 @@ public class BirdController : MonoBehaviour
     private Vector2 neutral;
     /******************************/
 
-
-    void Awake()
-    {
-        this.gameObject.name = "Bird";
-    }
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -74,7 +68,8 @@ public class BirdController : MonoBehaviour
         move();
     }
 
-    private void move()                   //function for moving and rotating the bird
+    //function for moving and rotating the bird
+    private void move()
     {
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y * flySpeed);
 
@@ -90,6 +85,7 @@ public class BirdController : MonoBehaviour
 
     private void shapeShift()
     {
+        
     }
 
     private void checkTime()

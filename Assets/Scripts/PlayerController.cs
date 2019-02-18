@@ -23,10 +23,6 @@ public class PlayerController : MonoBehaviour
     private float jumpTimeCounter;
     private bool isJumping;
     //************************************/
-    void Awake()
-    {
-        this.gameObject.name = "player";
-    }
 
     void Start()
     {
