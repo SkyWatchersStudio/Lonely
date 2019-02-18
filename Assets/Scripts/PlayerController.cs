@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
-{   
+{
     //*************************************/  Components on the player gameobject
     private Rigidbody2D rb;
     //*************************************/
@@ -22,11 +22,16 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private float jumpTimeCounter;
     private bool isJumping;
-    //************************************/
+    //************************************/ New Changes:
+    public Sprite bird;
+    private SpriteRenderer sp;
+    private BirdController bc;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        sp = GetComponent<SpriteRenderer>();
+        bc = GetComponent<BirdController>();
     }
     void Update()
     {
@@ -71,7 +76,7 @@ public class PlayerController : MonoBehaviour
         move();
     }
 
-    private void move()                              
+    private void move()
     {
         rb.velocity = new Vector2(moveInput * speed,rb.velocity.y);
         
@@ -87,5 +92,8 @@ public class PlayerController : MonoBehaviour
 
     private void shapeShift()
     {
+        sp.sprite = bird;
+        this.enabled = false;
+        bc.enabled = true;
     }
 }

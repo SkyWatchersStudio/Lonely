@@ -239,6 +239,7 @@ MonoBehaviour:
   shapeShiftTime: 10
   speed: 2
   flySpeed: 2
+  player: {fileID: 21300000, guid: 81be0508a5ede1d4981f23e9513e5836, type: 3}
 --- !u!1 &776590277
 GameObject:
   m_ObjectHideFlags: 0
@@ -4423,5 +4424,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2490719475911225487, guid: 53478e4379a2f764fb7741a922eef11a,
+        type: 3}
+      propertyPath: bird
+      value: 
+      objectReference: {fileID: 21300000, guid: 92163cdaf722afe468d2addce16f1266,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53478e4379a2f764fb7741a922eef11a, type: 3}

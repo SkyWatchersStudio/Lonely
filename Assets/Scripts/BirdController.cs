@@ -20,11 +20,17 @@ public class BirdController : MonoBehaviour
     private Vector2 up;
     private Vector2 down;
     private Vector2 neutral;
-    /******************************/
-
+    //******************************/ New Changes:
+    public Sprite player;
+    private SpriteRenderer sp;
+    private PlayerController pc;
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        sp = GetComponent<SpriteRenderer>();
+        pc = GetComponent<PlayerController>();
+        
         shapeShiftTimer = shapeShiftTime;
         
         up = new Vector2(rb.velocity.x,1.0f);
@@ -85,7 +91,9 @@ public class BirdController : MonoBehaviour
 
     private void shapeShift()
     {
-        
+        sp.sprite = player;
+        pc.enabled = true;
+        this.enabled = false;
     }
 
     private void checkTime()
