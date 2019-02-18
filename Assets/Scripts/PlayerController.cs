@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     public Sprite bird;
     private SpriteRenderer sp;
     private BirdController bc;
+    public Vector3 birdScale;
 
     void Start()
     {
@@ -92,6 +93,8 @@ public class PlayerController : MonoBehaviour
 
     private void shapeShift()
     {
+        rb.gravityScale = 0;
+        transform.localScale = birdScale;
         sp.sprite = bird;
         this.enabled = false;
         bc.enabled = true;

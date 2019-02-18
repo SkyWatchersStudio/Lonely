@@ -24,6 +24,7 @@ public class BirdController : MonoBehaviour
     public Sprite player;
     private SpriteRenderer sp;
     private PlayerController pc;
+    public Vector3 playerScale;
     
     void Start()
     {
@@ -66,7 +67,7 @@ public class BirdController : MonoBehaviour
             shapeShift();
         }
 
-        checkTime();
+        // checkTime();
     }
 
     void FixedUpdate()
@@ -91,16 +92,18 @@ public class BirdController : MonoBehaviour
 
     private void shapeShift()
     {
+        rb.gravityScale = 3;
+        transform.localScale = playerScale;
         sp.sprite = player;
         pc.enabled = true;
         this.enabled = false;
     }
 
-    private void checkTime()
-    {
-        if(shapeShiftTimer <= 0)
-        {
-            shapeShift();
-        }
-    }
+    // private void checkTime()
+    // {
+    //     if(shapeShiftTimer <= 0)
+    //     {
+    //         shapeShift();
+    //     }
+    // }
 }
