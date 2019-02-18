@@ -23,11 +23,6 @@ public class PlayerController : MonoBehaviour
     private float jumpTimeCounter;
     private bool isJumping;
     //************************************/
-
-    //************************************/ variables for shapeshift progress
-    public GameObject birdPrefab;
-    /************************************/
-
     void Awake()
     {
         this.gameObject.name = "player";
@@ -96,7 +91,5 @@ public class PlayerController : MonoBehaviour
 
     private void shapeShift()
     {
-        Instantiate(birdPrefab,transform.position,transform.rotation);
-        Destroy(this.gameObject);
     }
 }

@@ -11,7 +11,6 @@ public class BirdController : MonoBehaviour
     //******************************/ settings for shapeshift progress
     [SerializeField] private float shapeShiftTime; 
     private float shapeShiftTimer;
-    public GameObject playerPrefab;
     /******************************/
 
     //*****************************/ settings for moving The bird
@@ -91,8 +90,6 @@ public class BirdController : MonoBehaviour
 
     private void shapeShift()
     {
-        Instantiate(playerPrefab,transform.position,transform.rotation);
-        Destroy(this.gameObject);
     }
 
     private void checkTime()

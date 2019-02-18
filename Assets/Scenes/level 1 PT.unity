@@ -218,6 +218,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &618114676 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2490719475911225482, guid: 53478e4379a2f764fb7741a922eef11a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2490719476790362210}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &618114677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618114676}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5be39cb55f70c240bb5803e7f9813a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shapeShiftTime: 10
+  speed: 2
+  flySpeed: 2
 --- !u!1 &776590277
 GameObject:
   m_ObjectHideFlags: 0
@@ -4185,7 +4206,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 2.41
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4209,7 +4230,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2069548484}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -10.64, y: -0.38, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4337,6 +4358,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'player '
       objectReference: {fileID: 0}
+    - target: {fileID: 2490719475911225482, guid: 53478e4379a2f764fb7741a922eef11a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2490719475911225481, guid: 53478e4379a2f764fb7741a922eef11a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4391,6 +4417,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2490719475911225480, guid: 53478e4379a2f764fb7741a922eef11a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53478e4379a2f764fb7741a922eef11a, type: 3}
