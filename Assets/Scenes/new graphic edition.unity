@@ -515,11 +515,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0859a23d0c7f38740af136c032924adf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xRect: 25
-  yRect: 25
-  widthRect: 100
-  heightRect: 30
-  textField: Hello, World!
+  buttonPos:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  box:
+    serializedVersion: 2
+    x: 400
+    y: 100
+    width: 105
+    height: 100
 --- !u!61 &473265286
 BoxCollider2D:
   m_ObjectHideFlags: 0
