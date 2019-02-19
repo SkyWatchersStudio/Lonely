@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 public class TriggerLettersCollect : MonoBehaviour
 {
@@ -20,9 +19,8 @@ public class TriggerLettersCollect : MonoBehaviour
         boxString = "ella?";
         checkEnterance = true;
     }
-    private void OnTriggerExit2D() {
-        checkEnterance = false;
-    }
+    private void OnTriggerExit2D() => checkEnterance = false;
+        
     private void OnGUI() {        
         if (checkEnterance) 
         {
