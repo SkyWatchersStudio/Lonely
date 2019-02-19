@@ -517,28 +517,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonPos:
   - serializedVersion: 2
-    x: 400
+    x: 292
     y: 100
     width: 50
     height: 50
   - serializedVersion: 2
-    x: 456
+    x: 348
     y: 100
     width: 50
     height: 50
   - serializedVersion: 2
-    x: 512.29
+    x: 404.35
     y: 100
     width: 50
     height: 50
   - serializedVersion: 2
-    x: 569.4
+    x: 459.2
     y: 100
     width: 50
     height: 50
   box:
     serializedVersion: 2
-    x: 400.35
+    x: 292.35
     y: 73.2
     width: 218.3
     height: 76.5
