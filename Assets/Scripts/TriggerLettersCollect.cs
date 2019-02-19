@@ -14,8 +14,6 @@ public class TriggerLettersCollect : MonoBehaviour
     private int clicked, firstClicked;
     private string boxString, value;
 
-    private void Start() {
-    }
     private void OnTriggerEnter2D() {
         letters = new string[4] {"e", "l", "l", "a"};
         clicked = 0;
@@ -31,21 +29,13 @@ public class TriggerLettersCollect : MonoBehaviour
             GUI.Box(box, boxString);
             
             if (GUI.Button(buttonPos[0], letters[0]))
-            {
                 OnClick(0);
-            }
             if (GUI.Button(buttonPos[1], letters[1]))
-            {
                 OnClick(1);
-            }
             if (GUI.Button(buttonPos[2], letters[2]))
-            {
                 OnClick(2);
-            }
             if (GUI.Button(buttonPos[3], letters[3]))
-            {
                 OnClick(3);
-            }
         }
     }
     private void OnClick(int num)
