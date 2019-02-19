@@ -45,9 +45,9 @@ public class TriggerLettersCollect : MonoBehaviour
             return;
         }
         
-        string value = letters[num];
+        string tempVar = letters[num];
         letters[num] = letters[firstClicked];
-        letters[firstClicked] = value;
+        letters[firstClicked] = tempVar;
 
         clicked = 0;
 
