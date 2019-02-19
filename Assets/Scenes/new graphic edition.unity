@@ -516,17 +516,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonPos:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  box:
-    serializedVersion: 2
+  - serializedVersion: 2
     x: 400
     y: 100
-    width: 105
-    height: 100
+    width: 50
+    height: 50
+  - serializedVersion: 2
+    x: 456
+    y: 100
+    width: 50
+    height: 50
+  - serializedVersion: 2
+    x: 512.29
+    y: 100
+    width: 50
+    height: 50
+  - serializedVersion: 2
+    x: 569.4
+    y: 100
+    width: 50
+    height: 50
+  box:
+    serializedVersion: 2
+    x: 400.35
+    y: 73.2
+    width: 218.3
+    height: 76.5
 --- !u!61 &473265286
 BoxCollider2D:
   m_ObjectHideFlags: 0
