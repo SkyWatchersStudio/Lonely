@@ -48,6 +48,7 @@ public class Rotation : MonoBehaviour
     {
         if(timer <= 0)
         {
+            //could use turn = !turn;
             if(turn == true)
             {
                 turn = false;
