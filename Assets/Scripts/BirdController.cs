@@ -6,6 +6,7 @@ public class BirdController : MonoBehaviour
 {
     //******************************/ components of the bird
     private Rigidbody2D rb;
+    private CapsuleCollider2D cc;
     /*******************************/
 
     //******************************/ settings for shapeshift progress
@@ -16,58 +17,42 @@ public class BirdController : MonoBehaviour
     //*****************************/ settings for moving The bird
     [SerializeField] private float speed;
     [SerializeField] private float flySpeed;
-    private float moveInput;
-    private Vector2 up;
-    private Vector2 down;
-    private Vector2 neutral;
-    //******************************/ New Changes:
+    private float horizontalMove;
+    private float verticalMove;
+    /*****************************/
+    
+    //******************************/ variables for shapeshifting
     public Sprite player;
     private SpriteRenderer sp;
     private PlayerController pc;
     public Vector3 playerScale;
+    /*******************************/
     
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sp = GetComponent<SpriteRenderer>();
         pc = GetComponent<PlayerController>();
+        cc = GetComponent<CapsuleCollider2D>();
         
         shapeShiftTimer = shapeShiftTime;
-        
-        up = new Vector2(rb.velocity.x,1.0f);
-        down = new Vector2(rb.velocity.x,-1.0f);
-        neutral = new Vector2(rb.velocity.x,0.0f);
+
+        rb.velocity = new Vector2(0.0f,0.0f);
     }
 
     void Update()
     {
         shapeShiftTimer -= Time.deltaTime;
 
-        moveInput = Input.GetAxisRaw("Horizontal");
-        if(Input.GetButton("Jump"))
-        {
-            rb.velocity = up;
-        }
-        else if(Input.GetButtonUp("Jump"))
-        {
-            rb.velocity = neutral;
-        }
-
-        if(Input.GetButton("Down"))
-        {
-            rb.velocity = down;
-        }
-        else if(Input.GetButtonUp("Down"))
-        {
-            rb.velocity = neutral;
-        }
+        horizontalMove = Input.GetAxisRaw("Horizontal");
+        verticalMove = Input.GetAxisRaw("Vertical");
 
         if(Input.GetButtonDown("ShapeShift"))
-        {
+        {   
             shapeShift();
         }
 
-        // checkTime();
+        checkTime();
     }
 
     void FixedUpdate()
@@ -78,20 +63,21 @@ public class BirdController : MonoBehaviour
     //function for moving and rotating the bird
     private void move()
     {
-        rb.velocity = new Vector2(moveInput * speed, rb.velocity.y * flySpeed);
+        rb.velocity = new Vector2(horizontalMove * speed, verticalMove * flySpeed);
 
-        if(moveInput > 0)
+        if(horizontalMove > 0)
         {
             transform.eulerAngles = new Vector3(0,0,0);
         }
-        else if(moveInput < 0)
+        else if(horizontalMove < 0)
         {
             transform.eulerAngles = new Vector3(0,180,0);
         }
     }
 
     private void shapeShift()
-    {
+    {   
+        cc.size = new Vector2(0.42f,0.94f);
         rb.gravityScale = 3;
         transform.localScale = playerScale;
         sp.sprite = player;
@@ -99,11 +85,11 @@ public class BirdController : MonoBehaviour
         this.enabled = false;
     }
 
-    // private void checkTime()
-    // {
-    //     if(shapeShiftTimer <= 0)
-    //     {
-    //         shapeShift();
-    //     }
-    // }
+    private void checkTime()
+    {
+        if(shapeShiftTimer <= 0)
+        {
+            shapeShift();
+        }
+    }
 }

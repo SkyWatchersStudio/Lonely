@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     //*************************************/  Components on the player gameobject
+    private CapsuleCollider2D cc;
     private Rigidbody2D rb;
     //*************************************/
 
@@ -22,17 +23,21 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private float jumpTimeCounter;
     private bool isJumping;
-    //************************************/ New Changes:
+    /**************************************/
+    
+    //************************************/ variables for shapeshifting
     public Sprite bird;
     private SpriteRenderer sp;
     private BirdController bc;
     public Vector3 birdScale;
+    /*************************************/
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sp = GetComponent<SpriteRenderer>();
         bc = GetComponent<BirdController>();
+        cc = GetComponent<CapsuleCollider2D>();
     }
     void Update()
     {
@@ -69,6 +74,7 @@ public class PlayerController : MonoBehaviour
         {
             shapeShift();
         }
+
     }
 
 
@@ -92,7 +98,8 @@ public class PlayerController : MonoBehaviour
     }
 
     private void shapeShift()
-    {
+    {   
+        cc.size = new Vector2(4.8f,7.4f);
         rb.gravityScale = 0;
         transform.localScale = birdScale;
         sp.sprite = bird;
