@@ -27,6 +27,11 @@ public class BirdController : MonoBehaviour
     private PlayerController pc;
     public Vector3 playerScale;
     /*******************************/
+
+    void OnEnable()
+    {
+        shapeShiftTimer = shapeShiftTime;
+    }
     
     void Start()
     {
@@ -34,8 +39,6 @@ public class BirdController : MonoBehaviour
         sp = GetComponent<SpriteRenderer>();
         pc = GetComponent<PlayerController>();
         cc = GetComponent<CapsuleCollider2D>();
-        
-        shapeShiftTimer = shapeShiftTime;
 
         rb.velocity = new Vector2(0.0f,0.0f);
     }
