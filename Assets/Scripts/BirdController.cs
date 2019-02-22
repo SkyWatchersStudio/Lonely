@@ -28,6 +28,11 @@ public class BirdController : MonoBehaviour
     public Vector3 playerScale;
     /*******************************/
 
+    void OnEnable()
+    {
+        shapeShiftTimer = shapeShiftTime;
+    }
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -38,10 +43,6 @@ public class BirdController : MonoBehaviour
         shapeShiftTimer = shapeShiftTime;
 
         rb.velocity = new Vector2(0.0f,0.0f);
-    }
-
-    private void OnEnable() 
-    {
     }
 
     void Update()
