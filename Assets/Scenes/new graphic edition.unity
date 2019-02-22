@@ -1758,7 +1758,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 5
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -1782,7 +1782,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1826905905}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -25.6, y: -4.82, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1852,7 +1852,7 @@ GameObject:
   - component: {fileID: 1862952953}
   - component: {fileID: 1862952952}
   - component: {fileID: 1862952955}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: train_and_bridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
