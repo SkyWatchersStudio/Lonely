@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 12721856}
   - component: {fileID: 12721858}
   - component: {fileID: 12721857}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: bridge 1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -373,7 +373,7 @@ GameObject:
   - component: {fileID: 39448923}
   - component: {fileID: 39448925}
   - component: {fileID: 39448924}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: mile (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -561,7 +561,7 @@ GameObject:
   - component: {fileID: 71618167}
   - component: {fileID: 71618169}
   - component: {fileID: 71618168}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: bridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -874,7 +874,7 @@ GameObject:
   - component: {fileID: 329892110}
   - component: {fileID: 329892112}
   - component: {fileID: 329892111}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: zamin 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3045,7 +3045,7 @@ GameObject:
   - component: {fileID: 985215893}
   - component: {fileID: 985215895}
   - component: {fileID: 985215894}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: bridge 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3374,7 +3374,7 @@ GameObject:
   - component: {fileID: 1149270787}
   - component: {fileID: 1149270789}
   - component: {fileID: 1149270788}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pole kouchik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3610,7 +3610,7 @@ GameObject:
   - component: {fileID: 1426153794}
   - component: {fileID: 1426153796}
   - component: {fileID: 1426153795}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: zamin 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4256,7 +4256,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 3
+  m_GravityScale: 4.02
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -4274,9 +4274,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6b9e244adeb3d14f98c60aa7e091f9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10.53
+  speed: 5
   checkRadius: 0.3
-  jumpForce: 15.44
+  jumpForce: 5
   jumpTime: 0.35
   groundCheck: {fileID: 1385738822}
   whatIsGround:
@@ -4815,13 +4815,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Shader: {fileID: 4800000, guid: 9d7e8f87435780644abb4acdfd72a2f0, type: 3}
-  LookupTexture: {fileID: 2800000, guid: 78b06834af8bc544da3da025038d9d1c, type: 3}
-  Amount: 0.91
+  LookupTexture: {fileID: 2800000, guid: 9e153f5a102023e4fbc74a8696369462, type: 3}
+  Amount: 1
   TintColor: {r: 1, g: 1, b: 1, a: 1}
-  Hue: 282
-  Saturation: -0.12
-  Brightness: 0.33
-  Contrast: 0.95
+  Hue: 173
+  Saturation: 0.48
+  Brightness: 0.68
+  Contrast: 1
   Sharpness: 0
 --- !u!114 &1826905910
 MonoBehaviour:
@@ -5780,7 +5780,7 @@ GameObject:
   - component: {fileID: 2065048304}
   - component: {fileID: 2065048306}
   - component: {fileID: 2065048305}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: mile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5795,7 +5795,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2065048303}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 63.881397, y: -18.802458, z: -0.23478612}
+  m_LocalPosition: {x: 73.3, y: -18.802458, z: -0.23478612}
   m_LocalScale: {x: 9.352705, y: 9.352705, z: 9.352705}
   m_Children: []
   m_Father: {fileID: 1789342777}
