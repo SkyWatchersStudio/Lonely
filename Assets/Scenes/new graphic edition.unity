@@ -4820,7 +4820,7 @@ MonoBehaviour:
   TintColor: {r: 1, g: 1, b: 1, a: 1}
   Hue: 173
   Saturation: 0.48
-  Brightness: 0.68
+  Brightness: 0.39
   Contrast: 1
   Sharpness: 0
 --- !u!114 &1826905910
