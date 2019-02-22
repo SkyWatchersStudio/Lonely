@@ -39,6 +39,10 @@ public class PlayerController : MonoBehaviour
         bc = GetComponent<BirdController>();
         cc = GetComponent<CapsuleCollider2D>();
     }
+
+    private void OnEnable() 
+    {
+    }
     void Update()
     {
         moveInput = Input.GetAxisRaw("Horizontal");
