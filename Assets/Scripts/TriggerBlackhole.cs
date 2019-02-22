@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class TriggerBlackhole : MonoBehaviour
 {    
-    private void OnTriggerEnter2D() => Entered = true;
+    public int m_TimeWait = 5;
+    
+    private void OnTriggerEnter2D()
+    {
+        Entered = true;
+    }
 
     public static bool Entered { get; private set;}
 }
