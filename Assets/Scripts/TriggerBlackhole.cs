@@ -5,8 +5,7 @@ public class TriggerBlackhole : MonoBehaviour
     //for cinematic:
     public float m_TimeWait = 5;
     private PlayerController playerScript;
-    public GameObject vCam1;
-    public GameObject vCam2;
+    public GameObject vCam1, vCam2;
 
     public static bool Entered { get; private set;}
     private void OnTriggerEnter2D(Collider2D other)
@@ -15,9 +14,13 @@ public class TriggerBlackhole : MonoBehaviour
         other.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 
         Entered = true;
-        vCam1.SetActive(false);
-        vCam2.SetActive(true);
+        DisablerCam();
         playerScript.enabled = false;
+    }
+    void DisablerCam()
+    {
+        vCam1.SetActive(!vCam1.activeSelf);
+        vCam2.SetActive(!vCam2.activeSelf);
     }
     private void Update()
     {
@@ -28,8 +31,7 @@ public class TriggerBlackhole : MonoBehaviour
         if (m_TimeWait <= 0)
         {
             playerScript.enabled = true;
-            vCam1.SetActive(true);
-            vCam2.SetActive(false);
+            DisablerCam();
         }
         m_TimeWait -= Time.deltaTime;
     }
