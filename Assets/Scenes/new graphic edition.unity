@@ -2259,7 +2259,7 @@ MonoBehaviour:
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
   m_SoftZoneWidth: 0.66
-  m_SoftZoneHeight: 0.53
+  m_SoftZoneHeight: 0.78
   m_BiasX: 0
   m_BiasY: 0
   m_CenterOnActivate: 1
@@ -4361,7 +4361,7 @@ GameObject:
   m_Layer: 0
   m_Name: Trigger-Blackhole
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4377,6 +4377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3a89356a6fa2c4faabb53dd7099ff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_TimeWait: 5
 --- !u!61 &1534236494
 BoxCollider2D:
   m_ObjectHideFlags: 0
