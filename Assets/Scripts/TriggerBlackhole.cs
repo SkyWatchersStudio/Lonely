@@ -12,6 +12,7 @@ public class TriggerBlackhole : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         playerScript = other.GetComponent<PlayerController>();
+        other.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 
         Entered = true;
         playerScript.enabled = false;
