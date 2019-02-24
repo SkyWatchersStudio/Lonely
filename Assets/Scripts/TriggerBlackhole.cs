@@ -28,7 +28,7 @@ public class TriggerBlackhole : MonoBehaviour
     }
     private void Update()
     {
-        if (!Entered || playerScript.enabled)
+        if (!Entered)
             return;
 
         //after waiting 5 second cinematic
@@ -36,6 +36,8 @@ public class TriggerBlackhole : MonoBehaviour
         {
             playerScript.enabled = true;
             DisablerCam();
+
+            gameObject.SetActive(false);
         }
         m_TimeWait -= Time.deltaTime;
     }
