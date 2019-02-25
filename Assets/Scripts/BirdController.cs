@@ -32,7 +32,7 @@ public class BirdController : MonoBehaviour
     {
         shapeShiftTimer = shapeShiftTime;
     }
-    
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -82,10 +82,6 @@ public class BirdController : MonoBehaviour
 
     private void shapeShift()
     {
-        cc.size = new Vector2(0.42f,0.94f);
-        rb.gravityScale = 3;
-        transform.localScale = playerScale;
-        sp.sprite = player;
         pc.enabled = true;
         this.enabled = false;
     }
@@ -96,5 +92,13 @@ public class BirdController : MonoBehaviour
         {
             shapeShift();
         }
+    }
+
+    private void OnDisable()
+    {
+        cc.size = new Vector2(0.42f,0.94f);
+        rb.gravityScale = 3;
+        transform.localScale = playerScale;
+        sp.sprite = player;
     }
 }

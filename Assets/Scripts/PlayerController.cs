@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     private float jumpTimeCounter;
     private bool isJumping;
     /**************************************/
-    
+
     //************************************/ variables for shapeshifting
     public Sprite bird;
     private SpriteRenderer sp;
@@ -38,10 +38,6 @@ public class PlayerController : MonoBehaviour
         sp = GetComponent<SpriteRenderer>();
         bc = GetComponent<BirdController>();
         cc = GetComponent<CapsuleCollider2D>();
-    }
-
-    private void OnEnable() 
-    {
     }
     void Update()
     {
@@ -90,7 +86,7 @@ public class PlayerController : MonoBehaviour
     private void move()
     {
         rb.velocity = new Vector2(moveInput * speed,rb.velocity.y);
-        
+
         if(moveInput > 0)
         {
             transform.eulerAngles = new Vector3(0,0,0);
@@ -102,12 +98,16 @@ public class PlayerController : MonoBehaviour
     }
 
     private void shapeShift()
-    {   
+    {
+        this.enabled = false;
+        bc.enabled = true;
+    }
+
+    private void OnDisable()
+    {
         cc.size = new Vector2(4.8f,7.4f);
         rb.gravityScale = 0;
         transform.localScale = birdScale;
         sp.sprite = bird;
-        this.enabled = false;
-        bc.enabled = true;
     }
 }
