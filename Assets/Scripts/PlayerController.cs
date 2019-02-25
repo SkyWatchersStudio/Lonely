@@ -60,41 +60,25 @@ public class PlayerController : MonoBehaviour
                 jumpTimeCounter -= Time.deltaTime;
             }
             else
-            {
                 isJumping = false;
-            }
         }
 
         if(Input.GetButtonUp("Jump"))
-        {
             isJumping = false;
-        }
 
         if(Input.GetButtonDown("ShapeShift"))
-        {
             shapeShift();
-        }
-
     }
-
-
-    void FixedUpdate()
-    {
-        move();
-    }
+    void FixedUpdate() => move();
 
     private void move()
     {
         rb.velocity = new Vector2(moveInput * speed,rb.velocity.y);
 
         if(moveInput > 0)
-        {
             transform.eulerAngles = new Vector3(0,0,0);
-        }
         else if(moveInput < 0)
-        {
             transform.eulerAngles = new Vector3(0,180,0);
-        }
     }
 
     private void shapeShift()

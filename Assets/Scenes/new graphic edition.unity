@@ -2060,7 +2060,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   bird: {fileID: 21300000, guid: 92163cdaf722afe468d2addce16f1266, type: 3}
-  birdScale: {x: 0, y: 0, z: 0}
+  birdScale: {x: 0.2, y: 0.2, z: 0.2}
 --- !u!114 &1454800484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2075,9 +2075,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shapeShiftTime: 15
   speed: 5
-  flySpeed: 5
+  flySpeed: 3
   player: {fileID: 21300000, guid: d8de3f14b222aa845855f81d247d9147, type: 3}
-  playerScale: {x: 0, y: 0, z: 0}
+  playerScale: {x: 1, y: 1, z: 1}
 --- !u!1 &1535463740
 GameObject:
   m_ObjectHideFlags: 0
