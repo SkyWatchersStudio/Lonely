@@ -1931,6 +1931,7 @@ GameObject:
   - component: {fileID: 1454800482}
   - component: {fileID: 1454800479}
   - component: {fileID: 1454800483}
+  - component: {fileID: 1454800484}
   m_Layer: 8
   m_Name: player
   m_TagString: Untagged
@@ -2058,6 +2059,25 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 512
+  bird: {fileID: 21300000, guid: 92163cdaf722afe468d2addce16f1266, type: 3}
+  birdScale: {x: 0, y: 0, z: 0}
+--- !u!114 &1454800484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454800478}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5be39cb55f70c240bb5803e7f9813a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shapeShiftTime: 15
+  speed: 5
+  flySpeed: 5
+  player: {fileID: 21300000, guid: d8de3f14b222aa845855f81d247d9147, type: 3}
+  playerScale: {x: 0, y: 0, z: 0}
 --- !u!1 &1535463740
 GameObject:
   m_ObjectHideFlags: 0
