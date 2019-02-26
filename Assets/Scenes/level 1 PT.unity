@@ -2069,6 +2069,7 @@ GameObject:
   - component: {fileID: 503401842}
   - component: {fileID: 503401844}
   - component: {fileID: 503401843}
+  - component: {fileID: 503401845}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -2143,6 +2144,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &503401845
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503401841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+  m_AmplitudeGain: 0
+  m_FrequencyGain: 0
+  mNoiseOffsets: {x: 615.6904, y: 575.6013, z: -592.7394}
 --- !u!1 &538406461
 GameObject:
   m_ObjectHideFlags: 0
@@ -4468,7 +4485,7 @@ GameObject:
   - component: {fileID: 1207412927}
   - component: {fileID: 1207412929}
   - component: {fileID: 1207412928}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5102,7 +5119,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 2.96
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -5122,7 +5139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   checkRadius: 0.3
-  jumpForce: 5
+  jumpForce: 8
   jumpTime: 0.35
   groundCheck: {fileID: 394033135}
   whatIsGround:
@@ -5852,6 +5869,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1582748863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1582748865}
+  - component: {fileID: 1582748864}
+  m_Layer: 0
+  m_Name: ShakeManager
+  m_TagString: ShakeManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1582748864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582748863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73873ac83e23b9c4aa9fe850ed09af9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 2
+  amp: 4
+  frequency: 4
+  virtualCamera: {fileID: 1705014746}
+--- !u!4 &1582748865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582748863}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.106188, y: 16.560474, z: 1.053125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1609871150
 GameObject:
   m_ObjectHideFlags: 0
@@ -8081,6 +8145,7 @@ GameObject:
   - component: {fileID: 2069548486}
   - component: {fileID: 2069548485}
   - component: {fileID: 2069548488}
+  - component: {fileID: 2069548489}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -8189,6 +8254,25 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Cinemachine.CinemachineBrain+VcamActivatedEvent, Cinemachine, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!95 &2069548489
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069548484}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7b37f59ea4f93c247a816ca109492b8f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2118543722
 GameObject:
   m_ObjectHideFlags: 0
