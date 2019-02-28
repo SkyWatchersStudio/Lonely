@@ -19,6 +19,7 @@ public class TriggerFalling : MonoBehaviour
     
     void ColliderDisabler()
     {
+        //shake virtual cam...
         shakeScript.shaker();
         //i++ when calculate shows previouse value so i will change after this statement...
         m_boxColliders[i++].enabled = false;

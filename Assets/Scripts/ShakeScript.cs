@@ -5,7 +5,6 @@ using Cinemachine;
 
 public class ShakeScript : MonoBehaviour
 {
-
     [SerializeField] private float duration;
     [SerializeField] private float amp;
     [SerializeField] private float frequency;
