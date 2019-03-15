@@ -4885,6 +4885,7 @@ GameObject:
   - component: {fileID: 1454800482}
   - component: {fileID: 1454800479}
   - component: {fileID: 1454800483}
+  - component: {fileID: 1454800484}
   m_Layer: 8
   m_Name: player
   m_TagString: Untagged
@@ -4901,7 +4902,7 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 1454800478}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ebb028c972c641c4496eaf1bc4febd0d, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -5120,22 +5121,22 @@ MonoBehaviour:
   buttonPos:
   - serializedVersion: 2
     x: 371.6
-    y: 100.3
+    y: 101.15
     width: 50
     height: 50
   - serializedVersion: 2
     x: 423.9
-    y: 101.3
+    y: 100.7
     width: 50
     height: 50
   - serializedVersion: 2
     x: 475.6
-    y: 101.2
+    y: 101.1
     width: 50
     height: 50
   - serializedVersion: 2
     x: 528.5
-    y: 100.2
+    y: 100.5
     width: 50
     height: 50
   boxPos:
