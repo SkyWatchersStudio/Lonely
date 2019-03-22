@@ -24,6 +24,7 @@ public class TrainTrigger : MonoBehaviour
     }
     void Update()
     {
+        //trigger the train that will start moving...
         if (Input.GetKeyDown(KeyCode.S))
             m_trigger = true;
     }
@@ -39,10 +40,12 @@ public class TrainTrigger : MonoBehaviour
     {
         if (! m_TrainAudio.isPlaying)
         {
+            //every time want to play song change the pitch will make new sound
             m_TrainAudio.pitch = Random.Range(m_orginalPitch - m_PitchRange, m_orginalPitch + m_PitchRange);
             m_TrainAudio.Play();
         }
         
+        //speed up = volume up
         m_TrainAudio.volume = Mathf.Max(m_MinVolume, m_Speed / m_MaxSpeed);
     }
     private void move()
