@@ -52,3 +52,11 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# Untrack Cinemachine for hosein
+Assets/Cinemachine.meta
+Assets/tools/Cinemachine/CinemachineExamples.unitypackage.meta
+Assets/tools/Cinemachine/Timeline/
+Assets/tools/Cinemachine/Timeline.meta
+
+# Project Version Conflict
+ProjectSettings/ProjectVersion.txt

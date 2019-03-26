@@ -87,11 +87,11 @@ public class PlayerController : MonoBehaviour
         bc.enabled = true;
     }
 
-    private void OnDisable()
-    {
-        cc.size = new Vector2(4.8f,7.4f);
-        rb.gravityScale = 0;
-        transform.localScale = birdScale;
-        sp.sprite = bird;
-    }
+    // private void OnDisable()
+    // {
+    //     cc.size = new Vector2(4.8f,7.4f);
+    //     rb.gravityScale = 0;
+    //     transform.localScale = birdScale;
+    //     sp.sprite = bird;
+    // }
 }
