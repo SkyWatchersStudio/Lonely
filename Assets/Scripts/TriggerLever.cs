@@ -10,12 +10,6 @@ public class TriggerLever : MonoBehaviour
     private HingeJoint2D m_joint;
     private Rigidbody2D m_rigidbody;
 
-    private void Start()
-    {
-        //Refrences:
-        m_rigidbody = gameObject.AddComponent<Rigidbody2D>();
-        m_joint = gameObject.AddComponent<HingeJoint2D>();
-    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
@@ -31,13 +25,17 @@ public class TriggerLever : MonoBehaviour
     }
     private void SetValues()
     {
+        //Refrences:
+        m_rigidbody = gameObject.AddComponent<Rigidbody2D>();
+        m_joint = gameObject.AddComponent<HingeJoint2D>();
+
         //limit angle
         m_angle.max = 45;
         //Set joint at desire
         m_joint.limits = m_angle;
         m_joint.anchor = m_AnchorPoint;
     }
-    private void OnDisable() 
+    private void OnDisable()
     {
         Destroy(m_joint);
         Destroy(m_rigidbody);
