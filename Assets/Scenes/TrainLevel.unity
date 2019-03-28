@@ -13842,6 +13842,7 @@ GameObject:
   - component: {fileID: 1012875793}
   - component: {fileID: 1012875794}
   - component: {fileID: 1012875795}
+  - component: {fileID: 1012875796}
   m_Layer: 0
   m_Name: lever
   m_TagString: Untagged
@@ -13926,6 +13927,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Force: 30
   m_AnchorPoint: {fileID: 1295654676}
+  m_Collider: {fileID: 1012875796}
+--- !u!61 &1012875796
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012875792}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0000021904707, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.11, y: 0.83}
+    newSize: {x: 0.11, y: 0.83}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9258901, y: 1.8560355}
+  m_EdgeRadius: 0
 --- !u!1 &1013954359
 GameObject:
   m_ObjectHideFlags: 0

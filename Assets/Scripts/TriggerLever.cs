@@ -16,10 +16,6 @@ public class TriggerLever : MonoBehaviour
         Gizmos.DrawWireCube(transform.position, m_Collider.size);
     }
 
-    private void OnTriggerEnter2D(Collider2D other) 
-    {
-        OnTriggerEnter2D(other);
-    }
     private void OnTriggerStay2D(Collider2D other)
     {
         if (other.tag == "Player")
@@ -35,10 +31,6 @@ public class TriggerLever : MonoBehaviour
                 if (m_rigidbody.velocity == Vector2.zero)
                     this.enabled = false;
         }
-    }
-    private void OnTriggerExit2D(Collider2D other) 
-    {
-        OnTriggerStay2D(other);
     }
     private void SetValues()
     {
