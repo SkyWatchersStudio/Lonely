@@ -3,7 +3,7 @@ using UnityEngine;
 public class TriggerLever : MonoBehaviour
 {
     public float m_Force = 20;
-    public Vector2 m_AnchorPoint;
+    public Transform m_AnchorPoint;
 
     private bool m_trigger = false;
     private JointAngleLimits2D m_angle;
@@ -12,7 +12,7 @@ public class TriggerLever : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetButtonDown("Interact"))
         {
             SetValues();
             //Trigger the lever
@@ -33,7 +33,7 @@ public class TriggerLever : MonoBehaviour
         m_angle.max = 45;
         //Set joint at desire
         m_joint.limits = m_angle;
-        m_joint.anchor = m_AnchorPoint;
+        m_joint.anchor = transform.InverseTransformPoint(m_AnchorPoint.position);
     }
     private void OnDisable()
     {
