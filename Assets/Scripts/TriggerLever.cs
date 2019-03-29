@@ -14,7 +14,6 @@ public class TriggerLever : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Debug.Log("Player Inside TRIGGER");
             if (Input.GetButtonDown("Interact"))
             {
                 SetValues();
@@ -24,7 +23,11 @@ public class TriggerLever : MonoBehaviour
             }
             if (m_trigger)
                 if (m_rigidbody.velocity == Vector2.zero)
-                    this.enabled = false;
+                {
+                    Destroy(m_joint);
+                    Destroy(m_rigidbody);
+                    Destroy(this);
+                }
         }
     }
     private void SetValues()
@@ -39,11 +42,5 @@ public class TriggerLever : MonoBehaviour
         //Set joint at desire
         m_joint.limits = angle;
         m_joint.anchor = transform.InverseTransformPoint(m_AnchorPoint.position);
-    }
-    //Destroy Components:
-    private void OnDisable()
-    {
-        Destroy(m_joint);
-        Destroy(m_rigidbody);
     }
 }
