@@ -4,7 +4,6 @@ public class TriggerLever : MonoBehaviour
 {
     public float m_Force = 30;
     public Transform m_AnchorPoint;
-    public BoxCollider2D m_Collider;
 
     private bool m_trigger = false;
     private HingeJoint2D m_joint;
