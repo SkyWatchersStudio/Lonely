@@ -10,16 +10,12 @@ public class TriggerLever : MonoBehaviour
     private HingeJoint2D m_joint;
     private Rigidbody2D m_rigidbody;
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireCube(transform.position, m_Collider.size);
-    }
 
     private void OnTriggerStay2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
+            Debug.Log("Player Inside TRIGGER");
             if (Input.GetButtonDown("Interact"))
             {
                 SetValues();
