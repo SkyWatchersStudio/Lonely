@@ -10,7 +10,15 @@ public class TriggerLever : MonoBehaviour
     private Rigidbody2D m_rigidbody;
 
 
+    private void OnTriggerEnter2D(Collider2D other) 
+    {
+        IfEntered(other);
+    }
     private void OnTriggerStay2D(Collider2D other)
+    {
+        IfEntered(other);
+    }
+    private void IfEntered(Collider2D other)
     {
         if (other.tag == "Player")
         {
