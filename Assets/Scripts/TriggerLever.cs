@@ -9,18 +9,34 @@ public class TriggerLever : MonoBehaviour
     private HingeJoint2D m_joint;
     private Rigidbody2D m_rigidbody;
 
-    private void Update()
+
+    private void OnTriggerEnter2D(Collider2D other) 
     {
-        if (Input.GetButtonDown("Interact"))
+        IfEntered(other);
+    }
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        IfEntered(other);
+    }
+    private void IfEntered(Collider2D other)
+    {
+        if (other.tag == "Player")
         {
-            SetValues();
-            //Trigger the lever
-            m_rigidbody.AddForce(new Vector2(m_Force, 0), ForceMode2D.Impulse);
-            m_trigger = true;
+            if (Input.GetButtonDown("Interact"))
+            {
+                SetValues();
+                //Trigger the lever
+                m_rigidbody.AddForce(new Vector2(m_Force, 0), ForceMode2D.Impulse);
+                m_trigger = true;
+            }
+            if (m_trigger)
+                if (m_rigidbody.velocity == Vector2.zero)
+                {
+                    Destroy(m_joint);
+                    Destroy(m_rigidbody);
+                    Destroy(this);
+                }
         }
-        if (m_trigger)
-            if (m_rigidbody.velocity == Vector2.zero)
-                this.enabled = false;
     }
     private void SetValues()
     {
@@ -34,11 +50,5 @@ public class TriggerLever : MonoBehaviour
         //Set joint at desire
         m_joint.limits = angle;
         m_joint.anchor = transform.InverseTransformPoint(m_AnchorPoint.position);
-    }
-    //Destroy Components:
-    private void OnDisable()
-    {
-        Destroy(m_joint);
-        Destroy(m_rigidbody);
     }
 }
