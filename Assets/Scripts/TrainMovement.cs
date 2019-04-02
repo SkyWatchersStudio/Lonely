@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class TrainTrigger : MonoBehaviour
+public class TrainMovement : MonoBehaviour
 {
     public float m_Speed = 10f;
     public float m_MaxSpeed = 20;
