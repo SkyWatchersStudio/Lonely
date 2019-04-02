@@ -4,21 +4,26 @@ public class TriggerLever : MonoBehaviour
 {
     public float m_Force = 30;
     public Transform m_AnchorPoint;
+    public Transform m_VCam;
 
     private bool m_trigger = false;
     private HingeJoint2D m_joint;
     private Rigidbody2D m_rigidbody;
 
-
-    private void OnTriggerEnter2D(Collider2D other) 
+    public bool IsTrigger
     {
-        Entered(other);
+        get { return m_trigger; }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        EnteredTrigger(other);
     }
     private void OnTriggerStay2D(Collider2D other)
     {
-        Entered(other);
+        EnteredTrigger(other);
     }
-    private void Entered(Collider2D other)
+    private void EnteredTrigger(Collider2D other)
     {
         if (other.tag == "Player")
         {
@@ -34,6 +39,8 @@ public class TriggerLever : MonoBehaviour
                 {
                     Destroy(m_joint);
                     Destroy(m_rigidbody);
+                    m_VCam.GetChild(0).gameObject.SetActive(false);
+                    m_VCam.GetChild(1).gameObject.SetActive(true);
                     Destroy(this);
                 }
         }
