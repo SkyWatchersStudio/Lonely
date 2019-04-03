@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class TriggerFalling : MonoBehaviour
+public class TriggerFalling : EventTriggers
 {
     public BoxCollider2D[] m_boxColliders;
     public float m_wait = 2;
@@ -8,7 +8,9 @@ public class TriggerFalling : MonoBehaviour
     private int i = 0;
 
     //ivoke function call a function after specified time InvokeRepeating call it untill cacelInvoke call
-    void OnTriggerEnter2D() => InvokeRepeating("ColliderDisabler", m_wait, m_wait);
+    public override void OnTriggerEnter2D(Collider2D other) => InvokeRepeating("ColliderDisabler", m_wait, m_wait);
+    public override void OnTriggerStay2D(Collider2D other) {}
+    public override void OnTriggerExit2D() {}
     void ColliderDisabler()
     {
         //shake virtual cam...

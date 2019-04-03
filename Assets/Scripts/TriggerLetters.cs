@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class TriggerLetters : MonoBehaviour
+public class TriggerLetters : EventTriggers
 {
     public Rect[] buttonPos;  //Position of the buttons:
     public Rect boxPos;  //Position of the box specificly
@@ -11,15 +11,15 @@ public class TriggerLetters : MonoBehaviour
     private int clicked, firstClicked;
 
     //Reset everything on every enterance:
-    private void OnTriggerEnter2D()
+    public override void OnTriggerEnter2D(Collider2D other)
     {
         letters = new string[4] { "e", "l", "l", "a" }; //we changing our array so we should reset it
         boxText = "ella?";
         clicked = 0;  //if player clicked one time and left the collider we should reset it....
         checkEnterance = true;
     }
-
-    private void OnTriggerExit2D() => checkEnterance = false;
+    public override void OnTriggerStay2D(Collider2D other) {}
+    public override void OnTriggerExit2D() => checkEnterance = false;
 
     //The actuall representation:
     private void OnGUI()
