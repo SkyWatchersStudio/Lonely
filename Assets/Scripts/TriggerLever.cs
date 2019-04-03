@@ -10,11 +10,6 @@ public class TriggerLever : MonoBehaviour
     private HingeJoint2D m_joint;
     private Rigidbody2D m_rigidbody;
 
-    public bool IsTrigger
-    {
-        get { return m_trigger; }
-    }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         EnteredTrigger(other);

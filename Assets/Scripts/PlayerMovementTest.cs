@@ -3,10 +3,13 @@ using UnityEngine;
 public class PlayerMovementTest : MonoBehaviour
 {
     public float m_MoveSpeed = 10f;
+    public float m_Lerping = .25f;
+    public GameObject m_PauseObj;
 
     private Rigidbody2D m_rigidbody = null;
     private float m_moveInput = 0f;
-    private Vector2 m_moveDirect = Vector2.zero;
+    private Vector2 m_moveVel = Vector2.zero;
+    private bool m_isPause = false;
 
 
     private void Start()
@@ -15,17 +18,31 @@ public class PlayerMovementTest : MonoBehaviour
     }
     private void Update()
     {
-        m_moveInput = Input.GetAxis("Horizontal");
+        GetInput();
     }
     private void FixedUpdate()
     {
-        m_moveDirect = Vector2.Lerp(m_moveDirect, m_moveInput * Vector2.right * m_MoveSpeed, .25f);
-        if (Mathf.Abs(m_rigidbody.velocity.x) > m_MoveSpeed)
+        Moving();
+    }
+
+
+    void GetInput()
+    {
+        m_moveInput = Input.GetAxis("Horizontal");
+        if (Input.GetKeyDown(KeyCode.Escape) && !m_isPause)
         {
-            m_rigidbody.velocity = new Vector2
-                            (Mathf.Sign(m_rigidbody.velocity.x) * m_MoveSpeed, m_rigidbody.velocity.y);
-            return;
+            m_isPause = true;
+            m_PauseObj.SetActive(true);
         }
-        m_rigidbody.AddForce(m_moveDirect);
+        else if (Input.GetKeyDown(KeyCode.Escape) && m_isPause)
+        {
+            m_isPause = false;
+            m_PauseObj.SetActive(false);
+        }
+    }
+    void Moving()
+    {
+        m_moveVel = Vector2.Lerp(m_rigidbody.velocity, m_moveInput * Vector2.right * m_MoveSpeed, m_Lerping);
+        m_rigidbody.velocity = m_moveVel;
     }
 }

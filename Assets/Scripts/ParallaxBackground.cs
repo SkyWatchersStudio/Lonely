@@ -14,6 +14,14 @@ public class ParallaxBackground : MonoBehaviour
 
     private void Awake()
     {
+        cameraTransfrom = Camera.main.transform;
+        lastCameraX = cameraTransfrom.position.x;
+
+        leftIndex = 0;
+        rightIndex = layers.Length - 1;
+    }
+    private void Start()
+    {
         layers = new Transform[transform.childCount - 1];
         int childCounter = 1;
         for (int i = 0; i < layers.Length; i++)
@@ -25,14 +33,6 @@ public class ParallaxBackground : MonoBehaviour
         imageDistance = new float[transform.childCount - 1];
         for (int i = 0; i < imageDistance.Length; i++)
             imageDistance[i] = transform.GetChild(i + 1).position.x - transform.GetChild(i).position.x;
-    }
-    private void Start()
-    {
-        cameraTransfrom = Camera.main.transform;
-        lastCameraX = cameraTransfrom.position.x;
-
-        leftIndex = 0;
-        rightIndex = layers.Length - 1;
     }
     private void Update()
     {
