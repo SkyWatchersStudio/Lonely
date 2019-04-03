@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes 1/TrainLevel.unity
+    path: Assets/Scenes/TrainLevel.unity
     guid: 604fd6041d1af8b4c91bab7bb7667f47
   m_configObjects: {}
