@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class TriggerLever : MonoBehaviour
+public class TriggerLever : EventTriggers
 {
     public float m_Force = 30;
     public Transform m_AnchorPoint;
@@ -10,14 +10,15 @@ public class TriggerLever : MonoBehaviour
     private HingeJoint2D m_joint;
     private Rigidbody2D m_rigidbody;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public override void OnTriggerEnter2D(Collider2D other)
     {
         EnteredTrigger(other);
     }
-    private void OnTriggerStay2D(Collider2D other)
+    public override void OnTriggerStay2D(Collider2D other)
     {
         EnteredTrigger(other);
     }
+    public override void OnTriggerExit2D() {}
     private void EnteredTrigger(Collider2D other)
     {
         if (other.tag == "Player")
