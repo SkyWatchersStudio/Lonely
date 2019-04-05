@@ -2,14 +2,8 @@
 
 public class Pausing : MonoBehaviour
 {
-    private void OnEnable()
-    {
-        Time.timeScale = 0;
-    }
-    private void OnMouseDown() 
+    public void QuitTheGame() 
     {
         Application.Quit();
     }
-    //bring frames to normal...
-    private void OnDisable() => Time.timeScale = 1;
 }

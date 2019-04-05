@@ -32,12 +32,14 @@ public class PlayerMovementTest : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape) && !m_isPause)
         {
             m_isPause = true;
+            Time.timeScale = 0;
             m_PauseObj.SetActive(true);
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && m_isPause)
         {
             m_isPause = false;
             m_PauseObj.SetActive(false);
+            Time.timeScale = 1;
         }
     }
     void Moving()
