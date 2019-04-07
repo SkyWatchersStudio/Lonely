@@ -10,6 +10,7 @@ public class TriggerLever : EventTriggers
     private HingeJoint2D m_joint;
     private Rigidbody2D m_rigidbody;
 
+    
     public override void OnTriggerEnter2D(Collider2D other)
     {
         EnteredTrigger(other);
