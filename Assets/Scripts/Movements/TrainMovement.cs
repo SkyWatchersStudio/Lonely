@@ -5,7 +5,7 @@ public class TrainMovement : MonoBehaviour
     public float m_Speed = 1;
     public float m_MaxSpeed = 100;
     //damping speed
-    public float m_SmoothTime = 1.78f;
+    public float m_SmoothTime = 22.48f;
     //see if lever moved
     public TriggerLever m_LeverScript;
 
