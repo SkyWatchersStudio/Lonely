@@ -256,7 +256,7 @@ GameObject:
   - component: {fileID: 143718249}
   - component: {fileID: 143718250}
   - component: {fileID: 143718251}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platform (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -788,7 +788,7 @@ GameObject:
   - component: {fileID: 230576326}
   - component: {fileID: 230576327}
   - component: {fileID: 230576328}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: box (8)
   m_TagString: Breaker
   m_Icon: {fileID: 0}
@@ -6883,7 +6883,7 @@ GameObject:
   - component: {fileID: 466541768}
   - component: {fileID: 466541769}
   - component: {fileID: 466541770}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: box (5)
   m_TagString: Breaker
   m_Icon: {fileID: 0}
@@ -12653,7 +12653,7 @@ MonoBehaviour:
   m_Ground: {fileID: 193619064}
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 23
+    m_Bits: 256
 --- !u!212 &766587437
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12710,7 +12710,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766587435}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 128.9, y: 1.1, z: -3.64}
+  m_LocalPosition: {x: 128.9, y: 1.493, z: -3.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 193619064}
@@ -12737,7 +12737,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 6
 --- !u!61 &766587440
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12775,7 +12775,7 @@ GameObject:
   - component: {fileID: 773416565}
   - component: {fileID: 773416566}
   - component: {fileID: 773416567}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platform base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13218,7 +13218,7 @@ GameObject:
   - component: {fileID: 777932886}
   - component: {fileID: 777932887}
   - component: {fileID: 777932888}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 'platform '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13798,7 +13798,7 @@ GameObject:
   - component: {fileID: 817185560}
   - component: {fileID: 817185561}
   - component: {fileID: 817185562}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: box (1)
   m_TagString: Breaker
   m_Icon: {fileID: 0}
@@ -14497,7 +14497,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936771000}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 128.86375, y: 1.2976172, z: -16.740002}
+  m_LocalPosition: {x: 128.86375, y: 1.6906172, z: -16.740002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2037235558}
@@ -15194,7 +15194,7 @@ GameObject:
   - component: {fileID: 1013954360}
   - component: {fileID: 1013954361}
   - component: {fileID: 1013954362}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: box (3)
   m_TagString: Breaker
   m_Icon: {fileID: 0}
@@ -24776,7 +24776,7 @@ GameObject:
   - component: {fileID: 1067875554}
   - component: {fileID: 1067875555}
   - component: {fileID: 1067875556}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: box (9)
   m_TagString: Breaker
   m_Icon: {fileID: 0}
@@ -25094,7 +25094,7 @@ GameObject:
   - component: {fileID: 1133467272}
   - component: {fileID: 1133467273}
   - component: {fileID: 1133467274}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: box
   m_TagString: Breaker
   m_Icon: {fileID: 0}
@@ -25279,7 +25279,7 @@ GameObject:
   - component: {fileID: 1142603429}
   - component: {fileID: 1142603430}
   - component: {fileID: 1142603431}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: box (7)
   m_TagString: Breaker
   m_Icon: {fileID: 0}
@@ -25464,7 +25464,7 @@ GameObject:
   - component: {fileID: 1174630805}
   - component: {fileID: 1174630806}
   - component: {fileID: 1174630807}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: box (6)
   m_TagString: Breaker
   m_Icon: {fileID: 0}
@@ -26016,7 +26016,7 @@ GameObject:
   - component: {fileID: 1342175085}
   - component: {fileID: 1342175086}
   - component: {fileID: 1342175087}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platform (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26907,7 +26907,7 @@ GameObject:
   - component: {fileID: 1592806177}
   - component: {fileID: 1592806178}
   - component: {fileID: 1592806179}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: box (4)
   m_TagString: Breaker
   m_Icon: {fileID: 0}
@@ -27013,7 +27013,7 @@ GameObject:
   - component: {fileID: 1623293642}
   - component: {fileID: 1623293643}
   - component: {fileID: 1623293644}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platform (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42276,7 +42276,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1826905905}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 128.86375, y: 1.2976172, z: -16.740002}
+  m_LocalPosition: {x: 128.86375, y: 1.6906172, z: -16.740002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -42829,7 +42829,7 @@ GameObject:
   - component: {fileID: 1900287848}
   - component: {fileID: 1900287849}
   - component: {fileID: 1900287850}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platform (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47751,7 +47751,7 @@ GameObject:
   - component: {fileID: 1938014388}
   - component: {fileID: 1938014389}
   - component: {fileID: 1938014390}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: box (2)
   m_TagString: Breaker
   m_Icon: {fileID: 0}
@@ -47857,7 +47857,7 @@ GameObject:
   - component: {fileID: 1946169561}
   - component: {fileID: 1946169562}
   - component: {fileID: 1946169563}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LOCO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
