@@ -25,25 +25,15 @@ public class PlayerMovementTest : MonoBehaviour
     {
         //check the ground...
         m_isGround = Physics2D.OverlapCircle((Vector2)m_Ground.position, m_GroundRadious, m_WhatIsGround);
-        if (m_isGround)
-            m_rigidbody.constraints = RigidbodyConstraints2D.FreezePositionY;
         
         m_moveInput = Input.GetAxis("Horizontal");
         if (Input.GetKeyDown(KeyCode.Space) && m_isGround)
-            Jumping();
+            m_rigidbody.AddForce(new Vector2(0, m_JumpForce));
         GetPauseInput();
     }
     private void FixedUpdate()
     {
         Moving();
-    }
-
-
-    void Jumping()
-    {
-        m_rigidbody.constraints = RigidbodyConstraints2D.None;
-        m_rigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
-        m_rigidbody.AddForce(new Vector2(0, m_JumpForce));
     }
     void GetPauseInput()
     {
@@ -65,7 +55,6 @@ public class PlayerMovementTest : MonoBehaviour
         m_moveVel = Vector2.Lerp(m_rigidbody.velocity, m_moveInput * Vector2.right * m_MoveSpeed, m_Lerping);
         m_rigidbody.velocity = m_moveVel;
     }
-
     private void OnDrawGizmos() 
     {
         Gizmos.color = Color.red;
