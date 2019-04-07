@@ -4,7 +4,10 @@ public class TrainMovement : MonoBehaviour
 {
     public float m_Speed = 1;
     public float m_MaxSpeed = 100;
+    //damping speed
     public float m_SmoothTime = 1.78f;
+    //see if lever moved
+    public TriggerLever m_LeverScript;
 
     //variable used for smooth damp
     private float m_cVelocity;
@@ -16,7 +19,7 @@ public class TrainMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (true)
+        if (m_LeverScript.IsTriggered)
         {
             move();
         }

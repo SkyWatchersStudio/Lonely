@@ -13898,7 +13898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dca72629ff4af24193279d5abf5656c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_pauseAudioSource: {fileID: 954730498}
+  m_pauseAudioSource: {fileID: 0}
 --- !u!82 &954730498
 AudioSource:
   m_ObjectHideFlags: 0
