@@ -52,7 +52,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OldTVNoise:
-        m_Texture: {fileID: 2800000, guid: 5bb416a56caded0498a0a38e7296301f, type: 3}
+        m_Texture: {fileID: 2800000, guid: be5ebba85816a2c4589526af6e233426, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
@@ -67,21 +67,21 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Grainscale: 2
+    - _Grainscale: 0
     - _Metallic: 0
     - _Mode: 0
-    - _NoiseAttenuation: 0.1
+    - _NoiseAttenuation: 0.522
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _RandomValue: 0.01333
+    - _RandomValue: 0.013
     - _ScreenPartitionWidth: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _VigneteDistanceFormCenter: 0.9
-    - _VignetteBlinkvelocity: 0.6
-    - _VignetteDarkAmount: 1.4
+    - _VigneteDistanceFormCenter: 0.89
+    - _VignetteBlinkvelocity: 2.83
+    - _VignetteDarkAmount: 0.3
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
