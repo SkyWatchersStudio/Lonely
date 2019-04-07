@@ -2,7 +2,7 @@
 
 public class TrainMovement : MonoBehaviour
 {
-    public float m_Speed = 10f;
+    public float m_Speed = 1;
     public float m_MaxSpeed = 100;
     public float m_SmoothTime = 1.78f;
 
@@ -16,18 +16,15 @@ public class TrainMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if ()
+        if (true)
         {
             move();
         }
     }
     private void move()
     {
-        Vector2 moveSpeed;
         //Make a new 'velocity' for train
-        moveSpeed = new Vector2(m_Speed, m_rb.velocity.y);
-
-        m_rb.velocity = moveSpeed;
+        m_rb.velocity = new Vector2(m_Speed, m_rb.velocity.y);
         //moving speed toward max speed in the specified time...
         m_Speed = Mathf.SmoothDamp(m_Speed, m_MaxSpeed, ref m_cVelocity, m_SmoothTime);
     }

@@ -6,7 +6,6 @@ public class TriggerLever : EventTriggers
     public Transform m_AnchorPoint;
     public Transform m_VCam;
 
-    private bool m_trigger = false;
     private HingeJoint2D m_joint;
     private Rigidbody2D m_rigidbody;
 
@@ -22,6 +21,7 @@ public class TriggerLever : EventTriggers
     public override void OnTriggerExit2D() {}
     private void EnteredTrigger(Collider2D other)
     {
+        bool trigger = false;
         if (other.tag == "Player")
         {
             if (Input.GetButtonDown("Interact"))
@@ -29,9 +29,9 @@ public class TriggerLever : EventTriggers
                 SetValues();
                 //Trigger the lever
                 m_rigidbody.AddForce(new Vector2(m_Force, 0), ForceMode2D.Impulse);
-                m_trigger = true;
+                trigger = true;
             }
-            if (m_trigger)
+            if (trigger)
                 if (m_rigidbody.velocity == Vector2.zero)
                 {
                     Destroy(m_joint);
