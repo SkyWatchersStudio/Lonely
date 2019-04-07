@@ -574,7 +574,7 @@ GameObject:
   - component: {fileID: 230576328}
   m_Layer: 0
   m_Name: box (8)
-  m_TagString: Breaker
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6510,7 +6510,7 @@ GameObject:
   - component: {fileID: 466541770}
   m_Layer: 0
   m_Name: box (5)
-  m_TagString: Breaker
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11643,7 +11643,7 @@ GameObject:
   - component: {fileID: 606208298}
   m_Layer: 0
   m_Name: boxes
-  m_TagString: Untagged
+  m_TagString: Breaker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13133,7 +13133,7 @@ GameObject:
   - component: {fileID: 817185562}
   m_Layer: 0
   m_Name: box (1)
-  m_TagString: Breaker
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14529,7 +14529,7 @@ GameObject:
   - component: {fileID: 1013954362}
   m_Layer: 0
   m_Name: box (3)
-  m_TagString: Breaker
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24111,7 +24111,7 @@ GameObject:
   - component: {fileID: 1067875556}
   m_Layer: 0
   m_Name: box (9)
-  m_TagString: Breaker
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24429,7 +24429,7 @@ GameObject:
   - component: {fileID: 1133467274}
   m_Layer: 0
   m_Name: box
-  m_TagString: Breaker
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24614,7 +24614,7 @@ GameObject:
   - component: {fileID: 1142603431}
   m_Layer: 0
   m_Name: box (7)
-  m_TagString: Breaker
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24799,7 +24799,7 @@ GameObject:
   - component: {fileID: 1174630807}
   m_Layer: 0
   m_Name: box (6)
-  m_TagString: Breaker
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26215,7 +26215,7 @@ GameObject:
   - component: {fileID: 1592806179}
   m_Layer: 0
   m_Name: box (4)
-  m_TagString: Breaker
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47005,7 +47005,7 @@ GameObject:
   - component: {fileID: 1938014390}
   m_Layer: 0
   m_Name: box (2)
-  m_TagString: Breaker
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
