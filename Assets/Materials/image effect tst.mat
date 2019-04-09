@@ -67,21 +67,21 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Grainscale: 0
+    - _Grainscale: 2
     - _Metallic: 0
     - _Mode: 0
-    - _NoiseAttenuation: 0.176
+    - _NoiseAttenuation: 0.6
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _RandomValue: 0.667
+    - _RandomValue: 0.01333
     - _ScreenPartitionWidth: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _VigneteDistanceFormCenter: 0.57
-    - _VignetteBlinkvelocity: 0.38
-    - _VignetteDarkAmount: 0.17
+    - _VigneteDistanceFormCenter: 0.9
+    - _VignetteBlinkvelocity: 0.5
+    - _VignetteDarkAmount: 1.4
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
