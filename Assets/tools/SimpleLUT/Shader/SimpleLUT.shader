@@ -38,6 +38,7 @@ Shader "Custom/SimpleLUT"
 	uniform float2 _ImageHeightFactor;
 	uniform float _SharpnessCenterMultiplier;
 	uniform float _SharpnessEdgeMultiplier;
+	uniform float _VignetteDarkamount;
 
 	inline float3 applyHue(float3 aColor)
 	{
