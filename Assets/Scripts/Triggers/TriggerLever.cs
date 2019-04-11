@@ -3,18 +3,26 @@ using UnityEngine;
 public class TriggerLever : EventTriggers
 {
     public float m_Force = 30;
+    public float m_ParallaxSpeedAfterTrigger = .25f;
     public Transform m_AnchorPoint;
     public Transform m_VCam;
+    public Parallax m_parallaxBackground;
 
     private HingeJoint2D m_joint;
     private Rigidbody2D m_rigidbody;
     private bool m_trigger = false;
+    private GameObject m_beforeTrainCam, m_afterTrainCam;
 
     public bool IsTriggered { get {return m_trigger;} }
-    
+
+    private void Start() 
+    {
+        m_beforeTrainCam = m_VCam.GetChild(0).gameObject;
+        m_afterTrainCam = m_VCam.GetChild(1).gameObject;
+    }
     public override void OnTriggerEnter2D(Collider2D other)
     {
-        EnteredTrigger(other);
+        // EnteredTrigger(other);
     }
     public override void OnTriggerStay2D(Collider2D other)
     {
@@ -23,24 +31,29 @@ public class TriggerLever : EventTriggers
     public override void OnTriggerExit2D() {}
     private void EnteredTrigger(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player") && Input.GetButtonDown("Interact"))
         {
-            if (Input.GetButtonDown("Interact"))
-            {
-                SetValues();
-                //Trigger the lever
-                m_rigidbody.AddForce(new Vector2(m_Force, 0), ForceMode2D.Impulse);
-                m_trigger = true;
-            }
-            if (m_trigger)
-                if (m_rigidbody.velocity == Vector2.zero)
-                {
-                    Destroy(m_joint);
-                    Destroy(m_rigidbody);
-                    m_VCam.GetChild(0).gameObject.SetActive(false);
-                    m_VCam.GetChild(1).gameObject.SetActive(true);
-                    Destroy(this);
-                }
+            SetValues();
+            //Trigger the lever
+            m_rigidbody.AddForce(new Vector2(m_Force, 0), ForceMode2D.Impulse);
+            
+            //parallax changes after trigger
+            m_parallaxBackground.parallaxSpeed = m_ParallaxSpeedAfterTrigger;
+
+            //set the second camera as desire camera
+            m_beforeTrainCam.SetActive(false);
+            m_afterTrainCam.SetActive(true);
+
+            m_trigger = true;
+        }
+    }
+    private void FixedUpdate() 
+    {
+        if (m_trigger && m_rigidbody.velocity == Vector2.zero)
+        {
+            Destroy(m_joint);
+            Destroy(m_rigidbody);
+            Destroy(this);
         }
     }
     private void SetValues()
