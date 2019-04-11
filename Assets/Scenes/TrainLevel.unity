@@ -14988,7 +14988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Force: 30
-  m_ParallaxSpeedAfterTrigger: -0.19
+  m_ParallaxSpeedAfterTrigger: -0.06
   m_AnchorPoint: {fileID: 1295654676}
   m_VCam: {fileID: 354809784}
   m_parallaxBackground: {fileID: 1419410132}
@@ -26233,7 +26233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   viewZone: 0.31
-  parallaxSpeed: -10
+  parallaxSpeed: -0.06
 --- !u!1 &1524013902
 GameObject:
   m_ObjectHideFlags: 0

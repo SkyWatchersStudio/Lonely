@@ -3,10 +3,8 @@ using UnityEngine;
 public class TriggerLever : EventTriggers
 {
     public float m_Force = 30;
-    public float m_ParallaxSpeedAfterTrigger = .25f;
     public Transform m_AnchorPoint;
     public Transform m_VCam;
-    public Parallax m_parallaxBackground;
 
     private HingeJoint2D m_joint;
     private Rigidbody2D m_rigidbody;
@@ -37,9 +35,6 @@ public class TriggerLever : EventTriggers
             //Trigger the lever
             m_rigidbody.AddForce(new Vector2(m_Force, 0), ForceMode2D.Impulse);
             
-            //parallax changes after trigger
-            m_parallaxBackground.parallaxSpeed = m_ParallaxSpeedAfterTrigger;
-
             //set the second camera as desire camera
             m_beforeTrainCam.SetActive(false);
             m_afterTrainCam.SetActive(true);
