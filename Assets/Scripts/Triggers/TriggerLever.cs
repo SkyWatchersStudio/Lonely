@@ -48,9 +48,14 @@ public class TriggerLever : EventTriggers
         //Refrences:
         m_rigidbody = gameObject.AddComponent<Rigidbody2D>();
         m_joint = gameObject.AddComponent<HingeJoint2D>();
-        JointAngleLimits2D angle = new JointAngleLimits2D();
 
+        //rigidbody values:
+        m_rigidbody.gravityScale = 0;
+        m_rigidbody.mass = 2.16f;
+        m_rigidbody.angularDrag = .31f;
+        m_rigidbody.sleepMode = RigidbodySleepMode2D.StartAsleep;
         //limit angle
+        JointAngleLimits2D angle = m_joint.limits;
         angle.max = 45;
         //Set joint at desire
         m_joint.limits = angle;

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class TrainMovement : MonoBehaviour
 {
@@ -38,5 +39,15 @@ public class TrainMovement : MonoBehaviour
         {
             other.gameObject.SetActive(false);
         }
+        else if (other.gameObject.tag == "Player" && m_LeverScript.IsTriggered)
+        {
+            other.gameObject.SetActive(false);
+            StartCoroutine(WaitPlayerDeath());
+            UnityEditor.EditorApplication.isPlaying = false;
+        }
+    }
+    private IEnumerator WaitPlayerDeath()
+    {
+        yield return new WaitForSeconds(2);
     }
 }
