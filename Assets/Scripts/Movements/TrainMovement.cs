@@ -19,12 +19,10 @@ public class TrainMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        #if !UNITY_EDITOR
         if (m_LeverScript.IsTriggered)
         {
             move();
         }
-        #endif
     }
     private void move()
     {
@@ -37,16 +35,11 @@ public class TrainMovement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Breaker"))
-        {
             other.gameObject.SetActive(false);
-        }
-        #if !UNITY_EDITOR
         else if (other.gameObject.tag == "Player" && m_LeverScript.IsTriggered)
         {
             other.gameObject.SetActive(false);
-            StartCoroutine(WaitPlayerDeath());
             UnityEditor.EditorApplication.isPlaying = false;
         }
-        #endif
     }
 }

@@ -2,7 +2,7 @@
 
 public class Parallax : MonoBehaviour
 {
-    public float viewZone = 10;
+    public float viewZone = .31f;
     public float parallaxSpeed = -10;
 
     private Transform[] layers;
