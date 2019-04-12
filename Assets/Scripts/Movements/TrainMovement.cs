@@ -6,24 +6,25 @@ public class TrainMovement : MonoBehaviour
     public float m_MaxSpeed = 100;
     //damping speed
     public float m_SmoothTime = 22.48f;
-    //see if lever moved
-    public TriggerLever m_LeverScript;
 
     //variable used for smooth damp
     private float m_cVelocity;
     private Rigidbody2D m_rb;
+    private bool m_trigger = false;
 
     private void Start()
     {
         m_rb = GetComponent<Rigidbody2D>();
     }
+    #if !UNITY_EDITOR
     private void FixedUpdate()
     {
-        if (m_LeverScript.IsTriggered)
+        if (m_trigger)
         {
             move();
         }
     }
+    #endif
     private void move()
     {
         //Make a new 'velocity' for train
@@ -36,10 +37,18 @@ public class TrainMovement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Breaker"))
             other.gameObject.SetActive(false);
-        else if (other.gameObject.tag == "Player" && m_LeverScript.IsTriggered)
+        else if (other.gameObject.tag == "Player" && m_trigger)
         {
             other.gameObject.SetActive(false);
             UnityEditor.EditorApplication.isPlaying = false;
         }
+    }
+    public void ChangeWithTrigger()
+    {
+        m_rb.bodyType = RigidbodyType2D.Kinematic;
+        m_rb.useFullKinematicContacts = true;
+        m_rb.sleepMode = RigidbodySleepMode2D.StartAsleep;
+        m_rb.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+        m_trigger = true;
     }
 }

@@ -5,23 +5,23 @@ public class TriggerLever : EventTriggers
     public float m_Force = 30;
     public Transform m_AnchorPoint;
     public Transform m_VCam;
+    public TrainMovement m_Train;
+    public PlayerMovementTest m_PlayerScript;
+    public GameObject m_LocoSteam, m_LocoLight;
 
     private HingeJoint2D m_joint;
     private Rigidbody2D m_rigidbody;
     private bool m_trigger = false;
     private GameObject m_beforeTrainCam, m_afterTrainCam;
 
-    public bool IsTriggered { get {return m_trigger;} }
-
-    private void Start() 
+    private void Start()
     {
         m_beforeTrainCam = m_VCam.GetChild(0).gameObject;
         m_afterTrainCam = m_VCam.GetChild(1).gameObject;
+
+        m_rigidbody = GetComponent<Rigidbody2D>();
     }
-    public override void OnTriggerEnter2D(Collider2D other)
-    {
-        // EnteredTrigger(other);
-    }
+    public override void OnTriggerEnter2D(Collider2D other) {}
     public override void OnTriggerStay2D(Collider2D other)
     {
         EnteredTrigger(other);
@@ -34,7 +34,7 @@ public class TriggerLever : EventTriggers
             SetValues();
             //Trigger the lever
             m_rigidbody.AddForce(new Vector2(m_Force, 0), ForceMode2D.Impulse);
-            
+
             //set the second camera as desire camera
             m_beforeTrainCam.SetActive(false);
             m_afterTrainCam.SetActive(true);
@@ -42,22 +42,29 @@ public class TriggerLever : EventTriggers
             m_trigger = true;
         }
     }
-    private void FixedUpdate() 
+    private void LateUpdate()
     {
+        //if we triggered the lever and force applied and lever is standing
         if (m_trigger && m_rigidbody.velocity == Vector2.zero)
         {
-            Destroy(m_joint);
-            Destroy(m_rigidbody);
+            //call the event trigger...
+            m_Train.ChangeWithTrigger();
+            m_PlayerScript.m_trigger = true;
+
+            //turn on train
+            m_LocoLight.SetActive(true);
+            m_LocoSteam.SetActive(true);
+            
+            m_rigidbody.simulated = false;
             Destroy(this);
         }
     }
     private void SetValues()
     {
-        //Refrences:
-        m_rigidbody = gameObject.AddComponent<Rigidbody2D>();
         m_joint = gameObject.AddComponent<HingeJoint2D>();
 
-        //rigidbody values:
+        //rigidbody desire values:
+        m_rigidbody.bodyType = RigidbodyType2D.Dynamic;
         m_rigidbody.gravityScale = 0;
         m_rigidbody.mass = 2.16f;
         m_rigidbody.angularDrag = .31f;

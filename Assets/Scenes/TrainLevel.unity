@@ -1739,7 +1739,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 377975291}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
@@ -1767,7 +1767,6 @@ MonoBehaviour:
   m_Speed: 1
   m_MaxSpeed: 100
   m_SmoothTime: 32.52
-  m_LeverScript: {fileID: 1012875795}
 --- !u!1 &400248720
 GameObject:
   m_ObjectHideFlags: 0
@@ -12412,15 +12411,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0c637b571364b41a821c09bc9c7732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_trigger: 0
   m_MaxSpeed: 7.64
   m_MoveSpeed: 1.88
   m_MoveSpeedLerping: 0.5
   m_Lerping: 2.83
-  m_WaitForTrain: 1.5
   m_PauseObj: {fileID: 1127262989}
-  m_Lever: {fileID: 1012875795}
-  m_LocoLight: {fileID: 35015175}
-  m_LocoSteam: {fileID: 1753992677}
 --- !u!212 &766587437
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12494,8 +12490,8 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 5.73
+  m_UseAutoMass: 1
+  m_Mass: 0.45560002
   m_LinearDrag: 0.29
   m_AngularDrag: 0
   m_GravityScale: 0
@@ -14780,6 +14776,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1012875793}
   - component: {fileID: 1012875794}
+  - component: {fileID: 1012875797}
   - component: {fileID: 1012875796}
   - component: {fileID: 1012875795}
   m_Layer: 0
@@ -14867,6 +14864,10 @@ MonoBehaviour:
   m_Force: 30
   m_AnchorPoint: {fileID: 1295654676}
   m_VCam: {fileID: 354809784}
+  m_Train: {fileID: 377975294}
+  m_PlayerScript: {fileID: 766587436}
+  m_LocoSteam: {fileID: 1753992677}
+  m_LocoLight: {fileID: 35015175}
 --- !u!61 &1012875796
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14893,6 +14894,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2346177, y: 1.8560355}
   m_EdgeRadius: 0
+--- !u!50 &1012875797
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012875792}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 2
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1013954359
 GameObject:
   m_ObjectHideFlags: 0
@@ -25598,9 +25620,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1295654675}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.019, y: -0.387, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.044873998, z: -0, w: 0.9989927}
+  m_LocalPosition: {x: 131.94666, y: -0.029802918, z: -0}
+  m_LocalScale: {x: 1.9367, y: 1.9367, z: 1.9367}
   m_Children: []
   m_Father: {fileID: 1012875793}
   m_RootOrder: 0
