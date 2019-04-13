@@ -12446,7 +12446,6 @@ MonoBehaviour:
   m_MoveSpeed: 1.88
   m_MoveSpeedLerping: 0.5
   m_Lerping: 2.83
-  m_PauseObj: {fileID: 1127262989}
 --- !u!212 &766587437
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14251,8 +14250,8 @@ GameObject:
   - component: {fileID: 954730496}
   - component: {fileID: 954730495}
   - component: {fileID: 954730494}
-  - component: {fileID: 954730497}
   - component: {fileID: 954730498}
+  - component: {fileID: 954730497}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -14320,7 +14319,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 954730497}
+      - m_Target: {fileID: 0}
         m_MethodName: QuitTheGame
         m_Mode: 1
         m_Arguments:
@@ -14379,7 +14378,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 954730492}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1dca72629ff4af24193279d5abf5656c, type: 3}
+  m_Script: {fileID: 11500000, guid: 556bc9783af623340ad8119233c11576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_pauseAudioSource: {fileID: 954730498}
@@ -41858,6 +41857,7 @@ GameObject:
   - component: {fileID: 1826905906}
   - component: {fileID: 1826905910}
   - component: {fileID: 1826905909}
+  - component: {fileID: 1826905911}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -41987,6 +41987,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Cinemachine.CinemachineBrain+VcamActivatedEvent, Cinemachine, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1826905911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826905905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73f8fde457666c54c8eb05ba93b44454, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PauseCanvas: {fileID: 1127262989}
 --- !u!1 &1830618626
 GameObject:
   m_ObjectHideFlags: 0

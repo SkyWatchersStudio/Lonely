@@ -6,7 +6,6 @@ public class TriggerLever : EventTriggers
     public Transform m_AnchorPoint;
     public Transform m_VCam;
     public TrainMovement m_Train;
-    public PlayerMovementTest m_PlayerScript;
     public GameObject m_LocoSteam, m_LocoLight;
 
     private HingeJoint2D m_joint;
@@ -48,7 +47,7 @@ public class TriggerLever : EventTriggers
         {
             //call the event trigger...
             m_Train.ChangeWithTrigger();
-            m_PlayerScript.m_trigger = true;
+            // m_PlayerScript.m_trigger = true; //speed the player up to run away from train
 
             //turn on train
             m_LocoLight.SetActive(true);

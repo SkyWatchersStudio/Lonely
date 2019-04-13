@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Pausing : MonoBehaviour
+public class PauseMenue : MonoBehaviour
 {
     public AudioSource m_pauseAudioSource;
     private void OnEnable() 

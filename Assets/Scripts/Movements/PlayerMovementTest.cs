@@ -10,7 +10,6 @@ public class PlayerMovementTest : MonoBehaviour
     public float m_MoveSpeed = 4;
     public float m_MoveSpeedLerping = .25f;
     public float m_Lerping = 2.83f;
-    public GameObject m_PauseObj;
 
     private Rigidbody2D m_rigidbody = null;
     private float m_moveInput = 0f;
@@ -25,7 +24,6 @@ public class PlayerMovementTest : MonoBehaviour
     private void Update()
     {
         m_moveInput = Input.GetAxis("Horizontal");
-        GetPauseInput();
     }
     private void FixedUpdate()
     {
@@ -33,22 +31,6 @@ public class PlayerMovementTest : MonoBehaviour
         if (m_trigger)
             m_MoveSpeed = Mathf.Lerp(m_MoveSpeed, m_MaxSpeed, Time.fixedDeltaTime * m_MoveSpeedLerping);
         Moving();
-    }
-    //pause the game...
-    void GetPauseInput()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape) && !m_isPause)
-        {
-            m_isPause = true;
-            Time.timeScale = 0;
-            m_PauseObj.SetActive(true);
-        }
-        else if (Input.GetKeyDown(KeyCode.Escape) && m_isPause)
-        {
-            m_isPause = false;
-            m_PauseObj.SetActive(false);
-            Time.timeScale = 1;
-        }
     }
     void Moving()
     {

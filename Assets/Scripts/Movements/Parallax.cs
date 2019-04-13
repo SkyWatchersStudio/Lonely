@@ -47,7 +47,7 @@ public class Parallax : MonoBehaviour
         //use camera transition to move backgrounds that make background look you are moving
         float deltaX = cameraTransfrom.position.x - lastCameraX;
         //make a 3D visual. trigger lever are going to change the speed
-        transform.position += Vector3.right * (deltaX * parallaxSpeed);
+        transform.Translate(Vector3.right * (deltaX * parallaxSpeed));
     }
     private void LateUpdate()
     {
