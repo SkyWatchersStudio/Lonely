@@ -2,6 +2,9 @@
 
 public class PlayerController : MonoBehaviour
 {
+    [HideInInspector]
+    public bool m_trigger = false;
+    
     private Rigidbody2D rb;
     private float moveInput;
     [SerializeField] private float speed;

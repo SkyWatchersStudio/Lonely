@@ -18,10 +18,10 @@ public class TrainMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        // if (m_trigger)
-        // {
-        //     move();
-        // }
+        if (m_trigger)
+        {
+            move();
+        }
     }
     private void move()
     {
