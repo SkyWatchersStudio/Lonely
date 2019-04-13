@@ -3,7 +3,9 @@ using System.Collections;
 
 public class PlayerMovementTest : MonoBehaviour
 {
+    [HideInInspector]
     public bool m_trigger = false;
+    
     public float m_MaxSpeed = 7.57f;
     public float m_MoveSpeed = 4;
     public float m_MoveSpeedLerping = .25f;

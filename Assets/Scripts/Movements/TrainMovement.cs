@@ -16,15 +16,13 @@ public class TrainMovement : MonoBehaviour
     {
         m_rb = GetComponent<Rigidbody2D>();
     }
-    #if !UNITY_EDITOR
     private void FixedUpdate()
     {
-        if (m_trigger)
-        {
-            move();
-        }
+        // if (m_trigger)
+        // {
+        //     move();
+        // }
     }
-    #endif
     private void move()
     {
         //Make a new 'velocity' for train

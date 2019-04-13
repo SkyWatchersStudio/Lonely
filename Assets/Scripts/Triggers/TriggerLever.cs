@@ -21,18 +21,20 @@ public class TriggerLever : EventTriggers
 
         m_rigidbody = GetComponent<Rigidbody2D>();
     }
+
     public override void OnTriggerEnter2D(Collider2D other) {}
+    public override void OnTriggerExit2D() {}
+
     public override void OnTriggerStay2D(Collider2D other)
     {
         EnteredTrigger(other);
     }
-    public override void OnTriggerExit2D() {}
     private void EnteredTrigger(Collider2D other)
     {
         if (other.CompareTag("Player") && Input.GetButtonDown("Interact"))
         {
             SetValues();
-            //Trigger the lever
+            //Add force to the lever
             m_rigidbody.AddForce(new Vector2(m_Force, 0), ForceMode2D.Impulse);
 
             //set the second camera as desire camera
@@ -41,9 +43,6 @@ public class TriggerLever : EventTriggers
 
             m_trigger = true;
         }
-    }
-    private void LateUpdate()
-    {
         //if we triggered the lever and force applied and lever is standing
         if (m_trigger && m_rigidbody.velocity == Vector2.zero)
         {
@@ -55,25 +54,27 @@ public class TriggerLever : EventTriggers
             m_LocoLight.SetActive(true);
             m_LocoSteam.SetActive(true);
             
+            //disable simulated will disable physics of this object and also remove it from memroy
             m_rigidbody.simulated = false;
             Destroy(this);
         }
     }
     private void SetValues()
     {
+        //add references and setup components
+        m_rigidbody.bodyType = RigidbodyType2D.Dynamic;
         m_joint = gameObject.AddComponent<HingeJoint2D>();
+        JointAngleLimits2D angle = m_joint.limits;
 
         //rigidbody desire values:
-        m_rigidbody.bodyType = RigidbodyType2D.Dynamic;
         m_rigidbody.gravityScale = 0;
-        m_rigidbody.mass = 2.16f;
         m_rigidbody.angularDrag = .31f;
         m_rigidbody.sleepMode = RigidbodySleepMode2D.StartAsleep;
         //limit angle
-        JointAngleLimits2D angle = m_joint.limits;
         angle.max = 45;
         //Set joint at desire
         m_joint.limits = angle;
+        //convert world space into local space to use with anchor
         m_joint.anchor = transform.InverseTransformPoint(m_AnchorPoint.position);
     }
 }
