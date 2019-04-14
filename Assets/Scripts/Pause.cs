@@ -22,4 +22,8 @@ public class Pause : MonoBehaviour
             m_isPause = false;
         }
     }
+    public void QuiteTheGame()
+    {
+        Application.Quit();
+    }
 }
