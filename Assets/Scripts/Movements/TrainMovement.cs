@@ -45,11 +45,7 @@ public class TrainMovement : MonoBehaviour
     }
     public void ChangeWithTrigger()
     {
-        m_rb.bodyType = RigidbodyType2D.Kinematic;
         m_rb.simulated = true;
-        m_rb.useFullKinematicContacts = true;
-        m_rb.sleepMode = RigidbodySleepMode2D.StartAsleep;
-        m_rb.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
         m_trigger = true;
     }
 }
