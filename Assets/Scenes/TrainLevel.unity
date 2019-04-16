@@ -32307,7 +32307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dd8c89c00184d74f8978d2fbdb0927a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  processingImageMaterial: {fileID: 2100000, guid: 190aaabc00eb3d648ac121b37f8a77a0,
+  processingImageMaterial: {fileID: 2100000, guid: cc7191f5928bec24c959362ebb293200,
     type: 2}
   triggerRandomness: 1
 --- !u!1 &1830618626
