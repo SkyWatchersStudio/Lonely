@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 35015178}
   - component: {fileID: 35015177}
   - component: {fileID: 35015176}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: locomotive light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -221,7 +221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 189969519}
   - component: {fileID: 189969520}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -380,7 +380,7 @@ GameObject:
   m_Component:
   - component: {fileID: 205137539}
   - component: {fileID: 205137540}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -460,7 +460,7 @@ GameObject:
   - component: {fileID: 230576326}
   - component: {fileID: 230576327}
   - component: {fileID: 230576328}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: box (8)
   m_TagString: Breaker
   m_Icon: {fileID: 0}
@@ -565,7 +565,7 @@ GameObject:
   m_Component:
   - component: {fileID: 248048754}
   - component: {fileID: 248048755}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -723,7 +723,7 @@ GameObject:
   m_Component:
   - component: {fileID: 261842084}
   - component: {fileID: 261842085}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -881,7 +881,7 @@ GameObject:
   m_Component:
   - component: {fileID: 305990383}
   - component: {fileID: 305990384}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: train windows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -960,7 +960,7 @@ GameObject:
   m_Component:
   - component: {fileID: 325336568}
   - component: {fileID: 325336569}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1038,7 +1038,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 329045113}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: traveler (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1075,7 +1075,7 @@ GameObject:
   m_Component:
   - component: {fileID: 340672492}
   - component: {fileID: 340672493}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1234,7 +1234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 352903775}
   - component: {fileID: 352903776}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1344,7 +1344,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 366208551}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: traveler (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1382,7 +1382,7 @@ GameObject:
   - component: {fileID: 377975292}
   - component: {fileID: 377975293}
   - component: {fileID: 377975294}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: train
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1459,7 +1459,7 @@ GameObject:
   m_Component:
   - component: {fileID: 400248721}
   - component: {fileID: 400248722}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1538,7 +1538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 415926403}
   - component: {fileID: 415926404}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1617,7 +1617,7 @@ GameObject:
   m_Component:
   - component: {fileID: 443287745}
   - component: {fileID: 443287746}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TRAVELER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1697,7 +1697,7 @@ GameObject:
   - component: {fileID: 466541768}
   - component: {fileID: 466541769}
   - component: {fileID: 466541770}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: box (5)
   m_TagString: Breaker
   m_Icon: {fileID: 0}
@@ -1802,7 +1802,7 @@ GameObject:
   m_Component:
   - component: {fileID: 479913787}
   - component: {fileID: 479913788}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1881,7 +1881,7 @@ GameObject:
   m_Component:
   - component: {fileID: 504216546}
   - component: {fileID: 504216547}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TRAVELER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1965,7 +1965,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 536417642}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: traveler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2001,7 +2001,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 606208298}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: boxes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2122,7 +2122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 653045923}
   - component: {fileID: 653045924}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: train windows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2201,7 +2201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 656483576}
   - component: {fileID: 656483577}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2280,7 +2280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 695215234}
   - component: {fileID: 695215235}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2600,7 +2600,7 @@ GameObject:
   m_Component:
   - component: {fileID: 732499810}
   - component: {fileID: 732499811}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: midground platforms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2647,7 +2647,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 760254175}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: traveler (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2786,7 +2786,7 @@ GameObject:
   - component: {fileID: 773416566}
   - component: {fileID: 773416568}
   - component: {fileID: 773416567}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platform base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2997,7 +2997,7 @@ GameObject:
   - component: {fileID: 777932886}
   - component: {fileID: 777932887}
   - component: {fileID: 777932888}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 'platform '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3102,7 +3102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 788766470}
   - component: {fileID: 788766471}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3181,7 +3181,7 @@ GameObject:
   m_Component:
   - component: {fileID: 789069637}
   - component: {fileID: 789069638}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: train windows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3339,7 +3339,7 @@ GameObject:
   m_Component:
   - component: {fileID: 806458705}
   - component: {fileID: 806458706}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3498,7 +3498,7 @@ GameObject:
   - component: {fileID: 817185560}
   - component: {fileID: 817185561}
   - component: {fileID: 817185562}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: box (1)
   m_TagString: Breaker
   m_Icon: {fileID: 0}
@@ -3651,7 +3651,7 @@ GameObject:
   m_Component:
   - component: {fileID: 860105124}
   - component: {fileID: 860105125}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: train windows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3730,7 +3730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 861060767}
   - component: {fileID: 861060768}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3809,7 +3809,7 @@ GameObject:
   m_Component:
   - component: {fileID: 861838172}
   - component: {fileID: 861838173}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TRAVELER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4019,7 +4019,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936771000}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 126.97837, y: 3.8438997, z: -13.1}
+  m_LocalPosition: {x: 126.98757, y: 3.8438997, z: -13.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2037235558}
@@ -4165,7 +4165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 971382498}
   - component: {fileID: 971382499}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4244,7 +4244,7 @@ GameObject:
   m_Component:
   - component: {fileID: 974144445}
   - component: {fileID: 974144446}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4323,7 +4323,7 @@ GameObject:
   m_Component:
   - component: {fileID: 981230873}
   - component: {fileID: 981230874}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: train windows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4485,7 +4485,7 @@ GameObject:
   - component: {fileID: 1012875796}
   - component: {fileID: 1012875795}
   - component: {fileID: 1012875797}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: lever
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4631,7 +4631,7 @@ GameObject:
   - component: {fileID: 1013954360}
   - component: {fileID: 1013954361}
   - component: {fileID: 1013954362}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: box (3)
   m_TagString: Breaker
   m_Icon: {fileID: 0}
@@ -4873,6 +4873,321 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 983750298479010064, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.956052
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298479010064, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.29319727
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298601065879, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.99439114
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298601065879, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.10576533
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298968435754, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.9996272
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298968435754, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.027305353
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299542389677, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.9965064
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299542389677, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.08351676
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750297962954067, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.3730019
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750297962954067, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9278306
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750297962954067, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -676.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298506234474, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.41236374
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298506234474, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.91101927
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298261769564, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.1641248
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298261769564, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9864396
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299788303322, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.16418718
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299788303322, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9864292
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299149298453, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.03846243
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299149298453, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99926007
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299500551841, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.06941756
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299500551841, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9975877
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299500551841, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 7.9610004
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298117613695, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19225551
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298117613695, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9813449
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298117613695, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 22.169
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298435601675, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.09794144
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298435601675, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99519217
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298435601675, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 11.241
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298733988109, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.2287313
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298733988109, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9734896
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750297831106812, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.1618337
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750297831106812, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9868181
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299398975361, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.07327735
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299398975361, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99731165
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298304125492, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.071757555
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298304125492, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99742216
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299068830366, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.010323553
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299526048204, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.011103998
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299526048204, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99993837
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298591141896, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.055581357
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298591141896, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99845415
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299665968728, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.05459426
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299665968728, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9985087
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299230467663, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.010757634
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299230467663, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999421
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299671132706, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.081297845
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299671132706, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9966899
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299671132706, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -9.326
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298145275466, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.084793866
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298145275466, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9963985
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298753548519, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.1045364
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298753548519, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.994521
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299063269536, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.07531448
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299063269536, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9971599
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299288958940, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.03013835
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299288958940, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99954575
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299306499393, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.07761411
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299306499393, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99698347
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750299306499393, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 368.903
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298057242652, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7531647
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298057242652, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.657832
+      objectReference: {fileID: 0}
+    - target: {fileID: 983750298057242652, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -982.269
+      objectReference: {fileID: 0}
+    - target: {fileID: 349209094348442817, guid: 2476f7c1d00685340a2b17310d885fa3,
+        type: 3}
+      propertyPath: jumpForce
+      value: 6.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2476f7c1d00685340a2b17310d885fa3, type: 3}
 --- !u!1 &1031763450
@@ -4885,7 +5200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1031763451}
   - component: {fileID: 1031763452}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: end light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14362,7 +14677,7 @@ GameObject:
   - component: {fileID: 1067875554}
   - component: {fileID: 1067875555}
   - component: {fileID: 1067875556}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: box (9)
   m_TagString: Breaker
   m_Icon: {fileID: 0}
@@ -14745,7 +15060,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1130010677}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: midground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14782,7 +15097,7 @@ GameObject:
   - component: {fileID: 1133467272}
   - component: {fileID: 1133467273}
   - component: {fileID: 1133467274}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: box
   m_TagString: Breaker
   m_Icon: {fileID: 0}
@@ -14887,7 +15202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1138026679}
   - component: {fileID: 1138026680}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TRAVELER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14967,7 +15282,7 @@ GameObject:
   - component: {fileID: 1142603429}
   - component: {fileID: 1142603430}
   - component: {fileID: 1142603431}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: box (7)
   m_TagString: Breaker
   m_Icon: {fileID: 0}
@@ -15072,7 +15387,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1167527956}
   - component: {fileID: 1167527957}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15152,7 +15467,7 @@ GameObject:
   - component: {fileID: 1174630805}
   - component: {fileID: 1174630806}
   - component: {fileID: 1174630807}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: box (6)
   m_TagString: Breaker
   m_Icon: {fileID: 0}
@@ -15257,7 +15572,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1200345740}
   - component: {fileID: 1200345741}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15336,7 +15651,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1205851418}
   - component: {fileID: 1205851419}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15560,7 +15875,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1295654676}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: position
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15842,7 +16157,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1388595680}
   - component: {fileID: 1388595681}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15920,7 +16235,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1524013903}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: traveler (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15957,7 +16272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1525607116}
   - component: {fileID: 1525607117}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LOCO BAR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16084,7 +16399,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1546107013}
   - component: {fileID: 1546107014}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TRAVELER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16163,7 +16478,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1553866650}
   - component: {fileID: 1553866651}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16242,7 +16557,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1557308918}
   - component: {fileID: 1557308919}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16321,7 +16636,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1578382255}
   - component: {fileID: 1578382256}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16400,7 +16715,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1590688342}
   - component: {fileID: 1590688343}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16480,7 +16795,7 @@ GameObject:
   - component: {fileID: 1592806177}
   - component: {fileID: 1592806178}
   - component: {fileID: 1592806179}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: box (4)
   m_TagString: Breaker
   m_Icon: {fileID: 0}
@@ -16586,7 +16901,7 @@ GameObject:
   - component: {fileID: 1623293642}
   - component: {fileID: 1623293643}
   - component: {fileID: 1623293644}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platform (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16760,7 +17075,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1655448456}
   - component: {fileID: 1655448457}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16839,7 +17154,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1657439299}
   - component: {fileID: 1657439300}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17076,7 +17391,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1715790709}
   - component: {fileID: 1715790710}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17235,7 +17550,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1724738545}
   - component: {fileID: 1724738546}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TRAVELER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22012,7 +22327,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1752678484}
   - component: {fileID: 1752678485}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: train windows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22092,7 +22407,7 @@ GameObject:
   - component: {fileID: 1753992680}
   - component: {fileID: 1753992679}
   - component: {fileID: 1753992678}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: locomotive smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31624,7 +31939,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1780265677}
   - component: {fileID: 1780265678}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31772,7 +32087,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1826905905}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 126.97837, y: 3.8438997, z: -13.1}
+  m_LocalPosition: {x: 126.98757, y: 3.8438997, z: -13.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -31859,7 +32174,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1830618627}
   - component: {fileID: 1830618628}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32097,7 +32412,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1889269237}
   - component: {fileID: 1889269238}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32177,7 +32492,7 @@ GameObject:
   - component: {fileID: 1900287848}
   - component: {fileID: 1900287849}
   - component: {fileID: 1900287850}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platform (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32281,7 +32596,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1919069017}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: traveler (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32319,7 +32634,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1930467245}
   - component: {fileID: 1930467246}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: train windows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32399,7 +32714,7 @@ GameObject:
   - component: {fileID: 1938014388}
   - component: {fileID: 1938014389}
   - component: {fileID: 1938014390}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: box (2)
   m_TagString: Breaker
   m_Icon: {fileID: 0}
@@ -32505,7 +32820,7 @@ GameObject:
   - component: {fileID: 1946169561}
   - component: {fileID: 1946169562}
   - component: {fileID: 1946169563}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LOCO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33123,7 +33438,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2003941325}
   - component: {fileID: 2003941326}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: train windows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33375,7 +33690,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2018532820}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: locomotive
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33496,7 +33811,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2038755230}
   - component: {fileID: 2038755231}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33575,7 +33890,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2040093115}
   - component: {fileID: 2040093116}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TRAVELER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33654,7 +33969,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2049132599}
   - component: {fileID: 2049132600}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33732,7 +34047,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2056144255}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: traveler (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33768,7 +34083,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2086139995}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: traveler (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33805,7 +34120,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2090658579}
   - component: {fileID: 2090658580}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loco wheel 1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33884,7 +34199,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2129288220}
   - component: {fileID: 2129288221}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TRAVELER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
