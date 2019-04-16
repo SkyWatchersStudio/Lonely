@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ShakeManager
   - platform
+  - Breaker
   layers:
   - Default
   - TransparentFX
@@ -15,8 +16,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Ground
+  - Enemy
   - 
   - 
   - 

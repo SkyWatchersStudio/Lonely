@@ -2,9 +2,14 @@
 
 public class PlayerController : MonoBehaviour
 {
+    [HideInInspector]
+    public bool m_trigger = false;
+    
     private Rigidbody2D rb;
+    private Animator anim;
     private float moveInput;
     [SerializeField] private float speed;
+    private bool facingRight;
 
     //************************************/ attack values
     public Transform attackPos;
@@ -31,6 +36,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        facingRight = true;
     }
 
     void Update()
@@ -38,6 +45,8 @@ public class PlayerController : MonoBehaviour
         if ( recovery == false )
         {
             moveInput = Input.GetAxisRaw("Horizontal");
+
+            anim.SetFloat("Speed", Mathf.Abs(moveInput));
 
             isGrounded = Physics2D.OverlapCircle( groundCheck.position, checkRadius, whatIsground );
 
@@ -50,6 +59,7 @@ public class PlayerController : MonoBehaviour
             {
                 isJumping = true;
                 jumpTimeCounter = jumpTime;
+                anim.SetTrigger("Jump");
             }
 
             if ( Input.GetButton("Jump") )
@@ -75,9 +85,6 @@ public class PlayerController : MonoBehaviour
             if ( freezeTimeCounter <= 0.0f )
                 recovery = false;
         }
-
-        Debug.Log("intense " + intense);
-
     }
 
     void FixedUpdate()
@@ -90,18 +97,10 @@ public class PlayerController : MonoBehaviour
     {
         rb.velocity = new Vector2( moveInput * speed, rb.velocity.y );
 
-        if ( moveInput > 0.0f && transform.localScale.x == -1.0f)
-        {
-            Vector2 sc = transform.localScale;
-            sc.x *= -1.0f;
-            transform.localScale = sc;
-        }
-        else if ( moveInput < 0.0f && transform.localScale.x == 1.0f)
-        {
-            Vector2 sc = transform.localScale;
-            sc.x *= -1.0f;
-            transform.localScale = sc;            
-        }
+        if ( moveInput > 0.0f && !facingRight )
+            flip();
+        else if ( moveInput < 0.0f && facingRight)
+            flip();
     }
 
     public void hurt( float dir )
@@ -128,6 +127,14 @@ public class PlayerController : MonoBehaviour
                 enemy.SendMessage( "hurt", -1.0f);
             }
         }
+    }
+
+    private void flip()
+    {
+        facingRight = !facingRight;
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
     }
 
     void OnDrawGizmosSelected()
