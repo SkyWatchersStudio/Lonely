@@ -73,14 +73,14 @@ Material:
     - _NoiseAttenuation: 0.1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _RandomNumber: 0.23154652
+    - _RandomNumber: 0.1216768
     - _ScreenPartitionWidth: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _VigneteDistanceFormCenter: 0.95
-    - _VignetteBlinkvelocity: 8
+    - _VignetteBlinkvelocity: 2.39
     - _VignetteDarkAmount: 0.69
     - _ZWrite: 1
     m_Colors:
