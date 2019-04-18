@@ -16388,7 +16388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   viewZone: 0.31
-  parallaxSpeed: -0.01
+  parallaxSpeed: 0.01
 --- !u!1 &1546107012
 GameObject:
   m_ObjectHideFlags: 0
