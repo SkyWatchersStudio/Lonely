@@ -4,7 +4,7 @@ public class TriggerLever : EventTriggers
 {
     public float m_Force = 30;
     public Transform m_AnchorPoint;
-    public Transform m_VCam;
+    //public Transform m_VCam;
     public TrainMovement m_Train;
     public GameObject m_LocoSteam, m_LocoLight;
 
@@ -15,8 +15,8 @@ public class TriggerLever : EventTriggers
 
     private void Start()
     {
-        m_beforeTrainCam = m_VCam.GetChild(0).gameObject;
-        m_afterTrainCam = m_VCam.GetChild(1).gameObject;
+        //m_beforeTrainCam = m_VCam.GetChild(0).gameObject;
+        //m_afterTrainCam = m_VCam.GetChild(1).gameObject;
 
         m_rigidbody = GetComponent<Rigidbody2D>();
     }
@@ -37,8 +37,8 @@ public class TriggerLever : EventTriggers
             m_rigidbody.AddForce(new Vector2(m_Force, 0), ForceMode2D.Impulse);
 
             //set the second camera as desire camera
-            m_beforeTrainCam.SetActive(false);
-            m_afterTrainCam.SetActive(true);
+            //m_beforeTrainCam.SetActive(false);
+            //m_afterTrainCam.SetActive(true);
 
             m_trigger = true;
         }
