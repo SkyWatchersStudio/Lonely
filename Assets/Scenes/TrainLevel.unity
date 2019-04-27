@@ -5066,7 +5066,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936771000}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 108.969894, y: 7.3764195, z: -13.1}
+  m_LocalPosition: {x: 108.97203, y: 7.3764195, z: -13.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2037235558}
@@ -5231,7 +5231,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1826905911}
+      - m_Target: {fileID: 1826905912}
         m_MethodName: QuiteTheGame
         m_Mode: 1
         m_Arguments:
@@ -34339,7 +34339,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1826905905}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 108.969894, y: 7.3764195, z: -13.1}
+  m_LocalPosition: {x: 108.97203, y: 7.3764195, z: -13.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
