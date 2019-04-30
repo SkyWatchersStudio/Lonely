@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class TriggerLever : EventTriggers
+public class TriggerLever : MonoBehaviour
 {
     public float m_Force = 30;
     public Transform m_AnchorPoint;
@@ -11,6 +11,7 @@ public class TriggerLever : EventTriggers
     private HingeJoint2D m_joint;
     private Rigidbody2D m_rigidbody;
     private bool m_trigger = false;
+    bool m_buttonPressed = false;
     private GameObject m_beforeTrainCam, m_afterTrainCam;
 
     private void Start()
@@ -21,30 +22,38 @@ public class TriggerLever : EventTriggers
         m_rigidbody = GetComponent<Rigidbody2D>();
     }
 
-    public override void OnTriggerEnter2D(Collider2D other) {}
-    public override void OnTriggerExit2D() {}
-
-    public override void OnTriggerStay2D(Collider2D other)
+    private void Update()
     {
-        EnteredTrigger(other);
+        if (Input.GetButtonDown("Interact"))
+            m_buttonPressed = true;
     }
-    private void EnteredTrigger(Collider2D other)
+
+    private void FixedUpdate()
     {
-        if (other.CompareTag("Player") && Input.GetButtonDown("Interact"))
+        if (m_buttonPressed)
         {
-            SetValues();
-            //Add force to the lever
-            m_rigidbody.AddForce(new Vector2(m_Force, 0), ForceMode2D.Impulse);
-
-            //set the second camera as desire camera
-            //m_beforeTrainCam.SetActive(false);
-            //m_afterTrainCam.SetActive(true);
-
-            m_trigger = true;
+            PushLever();
+            m_buttonPressed = false;
         }
+    }
+
+    private void PushLever()
+    {
+        SetValues();
+        //Add force to the lever
+        m_rigidbody.AddForce(new Vector2(m_Force, 0), ForceMode2D.Impulse);
+
+        //set the second camera as desire camera
+        //m_beforeTrainCam.SetActive(false);
+        //m_afterTrainCam.SetActive(true);
+
+        m_trigger = true;
         //if we triggered the lever and force applied and lever is standing
         if (m_trigger && m_rigidbody.velocity == Vector2.zero)
         {
+            Debug.Log("Inside if statement");
+
+
             //call the event trigger...
             m_Train.ChangeWithTrigger();
             // m_PlayerScript.m_trigger = true; //speed the player up to run away from train

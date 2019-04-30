@@ -1,6 +1,4 @@
 ﻿using UnityEngine;
-using System;
-using System.Collections;
 
 public class TrainMovement : MonoBehaviour
 {
@@ -37,13 +35,6 @@ public class TrainMovement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Breaker"))
             other.gameObject.SetActive(false);
-#if UNITY_EDITOR
-        //else if (other.gameObject.tag == "Player" && m_trigger)
-        //{
-        //    other.gameObject.SetActive(false);
-        //    UnityEditor.EditorApplication.isPlaying = false;
-        //}
-#endif
     }
     public void ChangeWithTrigger()
     {

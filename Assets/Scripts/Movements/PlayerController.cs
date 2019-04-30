@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     private Animator anim;
     private float moveInput;
     [SerializeField] private float speed;
-    private bool facingRight;
+    private bool facingRight = true;
 
     //************************************/ attack values
     public Transform attackPos;
@@ -37,12 +37,11 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        facingRight = true;
     }
 
     void Update()
     {
-        if ( recovery == false )
+        if (recovery == false)
         {
             moveInput = Input.GetAxisRaw("Horizontal");
 
@@ -52,7 +51,7 @@ public class PlayerController : MonoBehaviour
 
             if ( Input.GetButtonDown("Attack") )
             {
-                attack();
+                Attack();
             }
 
             if ( isGrounded && Input.GetButtonDown("Jump"))
@@ -90,20 +89,20 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         if ( recovery == false )
-            move();  
+            Move();  
     }
 
-    private void move()
+    private void Move()
     {
         rb.velocity = new Vector2( moveInput * speed, rb.velocity.y );
 
-        if ( moveInput > 0.0f && !facingRight )
-            flip();
+        if (moveInput > 0.0f && !facingRight)
+            Flip();
         else if ( moveInput < 0.0f && facingRight)
-            flip();
+            Flip();
     }
 
-    public void hurt( float dir )
+    public void Hurt(float dir)
     {
         float inte = Mathf.Abs(intense);
         inte *= dir;
@@ -112,7 +111,7 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector2( inte, Mathf.Abs(inte) / 2 );
     }
 
-    private void attack()
+    private void Attack()
     {
         Collider2D enemy = Physics2D.OverlapCircle( attackPos.position, attackRadius, whatIsEnemy);
 
@@ -129,7 +128,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void flip()
+    private void Flip()
     {
         facingRight = !facingRight;
         Vector3 scale = transform.localScale;
@@ -139,8 +138,8 @@ public class PlayerController : MonoBehaviour
 
     void OnDrawGizmosSelected()
     {
-        Gizmos.DrawWireSphere( groundCheck.position, checkRadius );
+        Gizmos.DrawWireSphere(groundCheck.position, checkRadius);
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere( attackPos.position, attackRadius );
+        Gizmos.DrawWireSphere(attackPos.position, attackRadius);
     }
 }
