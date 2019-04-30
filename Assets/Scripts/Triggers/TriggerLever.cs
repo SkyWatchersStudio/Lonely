@@ -10,8 +10,7 @@ public class TriggerLever : MonoBehaviour
 
     private HingeJoint2D m_joint;
     private Rigidbody2D m_rigidbody;
-    private bool m_trigger = false;
-    bool m_buttonPressed = false;
+    bool m_trigger = false;
     private GameObject m_beforeTrainCam, m_afterTrainCam;
 
     private void Start()
@@ -25,47 +24,40 @@ public class TriggerLever : MonoBehaviour
     private void Update()
     {
         if (Input.GetButtonDown("Interact"))
-            m_buttonPressed = true;
-    }
-
-    private void FixedUpdate()
-    {
-        if (m_buttonPressed)
+        {
+            //setup lever for pushing it...
+            SetValues();
+            //set the trigger to true
+            m_trigger = true;
+            //Add force to the lever
+            m_rigidbody.AddForce(new Vector2(m_Force, 0), ForceMode2D.Impulse);
+        }
+        else if (m_trigger)
         {
             PushLever();
-            m_buttonPressed = false;
         }
     }
-
     private void PushLever()
     {
-        SetValues();
-        //Add force to the lever
-        m_rigidbody.AddForce(new Vector2(m_Force, 0), ForceMode2D.Impulse);
-
+        if (m_rigidbody.velocity != Vector2.zero)
+        {
+            return;
+        }
         //set the second camera as desire camera
         //m_beforeTrainCam.SetActive(false);
         //m_afterTrainCam.SetActive(true);
 
-        m_trigger = true;
-        //if we triggered the lever and force applied and lever is standing
-        if (m_trigger && m_rigidbody.velocity == Vector2.zero)
-        {
-            Debug.Log("Inside if statement");
+        //call the event trigger...
+        m_Train.ChangeWithTrigger();
+        // m_PlayerScript.m_trigger = true; //speed the player up to run away from train
 
+        //turn on train
+        m_LocoLight.SetActive(true);
+        m_LocoSteam.SetActive(true);
 
-            //call the event trigger...
-            m_Train.ChangeWithTrigger();
-            // m_PlayerScript.m_trigger = true; //speed the player up to run away from train
-
-            //turn on train
-            m_LocoLight.SetActive(true);
-            m_LocoSteam.SetActive(true);
-            
-            //disable simulated will disable physics of this object and also remove it from memroy
-            m_rigidbody.simulated = false;
-            Destroy(this);
-        }
+        //disable simulated will disable physics of this object and also remove it from memroy
+        m_rigidbody.simulated = false;
+        Destroy(this);
     }
     private void SetValues()
     {

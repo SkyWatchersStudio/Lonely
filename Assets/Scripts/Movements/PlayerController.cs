@@ -2,6 +2,8 @@
 
 public class PlayerController : MonoBehaviour
 {
+    public TrainMovement TrainScript;
+
     [HideInInspector]
     public bool m_trigger = false;
     
@@ -94,7 +96,7 @@ public class PlayerController : MonoBehaviour
 
     private void Move()
     {
-        rb.velocity = new Vector2( moveInput * speed, rb.velocity.y );
+        rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
 
         if (moveInput > 0.0f && !facingRight)
             Flip();
@@ -142,4 +144,12 @@ public class PlayerController : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPos.position, attackRadius);
     }
+
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Train"))
+    //    {
+    //        speed = speed + TrainScript.m_Speed;
+    //    }
+    //}
 }
